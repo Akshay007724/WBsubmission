@@ -1,0 +1,22 @@
+{
+ "pages_with_narrative": "10/10",
+ "citation_validity": 1.0,
+ "number_validity": 1.0,
+ "mean_thesis_jaccard": 0.04,
+ "repeated_risk_flags": 0,
+ "below_peers_pages": 2,
+ "conviction_levels_used": 3,
+ "conviction_spread": {
+  "Low": 3,
+  "Medium": 3,
+  "High": 4
+ },
+ "rank_conviction_inversions": 6,
+ "words_per_page": 476.1,
+ "status": {
+  "verified": 8,
+  "repaired": 2,
+  "unverified": 0,
+  "failed": 0
+ }
+}

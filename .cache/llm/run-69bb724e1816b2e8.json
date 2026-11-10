@@ -1,0 +1,16 @@
+{
+ "generated_at": "2026-11-09T13:19:35+00:00",
+ "elapsed_s": 26.3,
+ "provider": "anthropic",
+ "model": "claude-sonnet-5-5",
+ "prompt_version": "v1.6",
+ "tokens_in": 97776,
+ "tokens_out": 17645,
+ "cost_usd": 0.372,
+ "statuses": {
+  "verified": 8,
+  "repaired": 2,
+  "unverified": 0,
+  "failed": 0
+ }
+}

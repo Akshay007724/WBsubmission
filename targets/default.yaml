@@ -1,0 +1,7 @@
+# The assignment's target. Omitted ebitda_margin_pct -> "strong" = dataset 75th percentile.
+name: Project Atlas (Healthcare Services target)
+sector: Healthcare Services
+ev_mm: 200
+geography: Regional
+ownership: Private
+notes: Mid-market, private, regional, strong EBITDA margins

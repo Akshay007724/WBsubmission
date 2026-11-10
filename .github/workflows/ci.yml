@@ -1,0 +1,56 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12"]
+    env:              # no API keys in CI: offline and replay modes only
+      ANTHROPIC_API_KEY: ""
+      OPENAI_API_KEY: ""
+      GEMINI_API_KEY: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Lint
+        run: |
+          ruff check acquirer_engine tests
+          ruff format --check acquirer_engine tests
+      - name: Type check
+        run: mypy
+      - name: Tests (coverage >= 85%)
+        run: pytest --cov
+      - name: Offline end-to-end run
+        run: acquirer-engine --provider offline --out-dir out/ci
+      - name: Replay reproduces the committed sample
+        run: |
+          acquirer-engine --provider replay --out-dir out/replay
+          cmp out/replay/healthcare-services-200m-regional-private/report.json sample_output/report.json
+      - name: EDA on every fixture
+        run: |
+          for f in renamed_headers missing_multiples_bidders messy; do
+            acquirer-engine --eda-only --data tests/fixtures/$f.csv --out-dir out/eda/$f
+          done
+          acquirer-engine --eda-only --data tests/fixtures/tech_billions.csv --sector "Enterprise Software" --out-dir out/eda/tech
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pip-audit -r requirements.txt
+      - name: Known-vulnerability scan
+        run: pip-audit -r requirements.txt

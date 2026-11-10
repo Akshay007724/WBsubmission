@@ -1,0 +1,41 @@
+{
+ "rationale": {
+  "headline": "Advent has closed 6 deals in the $67.3-312.1M band, 3 of them recently, so Project Atlas fits as a platform.",
+  "acquirer_overview": "Advent International is a financial sponsor with 18 deals in 2016-2024, 5 of them in the last 3 years. Its most frequent sectors are Behavioral Health (3) and Revenue Cycle (3), and its size sweet spot is $67.3-312.1M (IQR). It most often buys from PE-Backed sellers (8 of 18), and All Cash is its most common financing (6 of 18). Its history spreads across 9 sectors, with Recapitalization (4) the most common deal type label, so it reads as a broad deployer rather than a single-sector specialist.",
+  "strategic_fit_thesis": "Project Atlas at $200M is a platform for Advent, inside its interquartile range of $67.3-312.1M. Advent has 6 closed deals in the size band, 3 of them in the last 3 years, and its closed control comps in adjacent sectors include [MA-2024-0120] (Healthcare Services, $303.9M) and [MA-2023-0108] ($123.0M). Its 2 platform-labelled deals have a median of $29.6M, so the label is a weak guide and we lean on size and recency instead. The closest competitor is New Mountain Capital, which has 21 deals against Advent's 18 and 7 closed in the band against 6. The sharpest difference is pricing: Advent pays in line with its peers, while New Mountain pays below. That matters if the client wants a buyer that will not anchor low. Advent has only 1 prior Healthcare Services deal, so sector depth is thinner than its deployment pace.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2024-0120",
+    "why_relevant": "Closed 2024 Healthcare Services recapitalization at $303.9M and 9.3x EV/EBITDA, financed with stock; the same sector as Atlas and usable as a comp."
+   },
+   {
+    "transaction_id": "MA-2023-0108",
+    "why_relevant": "Closed 2023 Behavioral Health recapitalization at $123.0M and 14.6x, all cash, with a single bidder; shows recent in-band deployment."
+   },
+   {
+    "transaction_id": "MA-2022-0419",
+    "why_relevant": "Closed 2022 Revenue Cycle deal at $105.9M and 20.3x with a 21.8% margin, close to Atlas's margin profile; leveraged financing."
+   }
+  ],
+  "valuation_context": "Advent's 4 closed control comps in adjacent sectors and in size range show a median of 13.4x EV/EBITDA (interquartile 11.6-16.0x) and 3.29x EV/revenue [MA-2024-0120][MA-2023-0108][MA-2022-0419]. Against Financial Sponsor peers, Advent pays in line with its peers (13.4x vs 13.5x, a gap of -0.1 turns). The highest multiple in its set, 20.3x, came with a 21.8% margin [MA-2022-0419]. The lowest, 9.3x, came from a 13.9% margin non-profit seller [MA-2024-0120]. Margin therefore appears to drive its price spread.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "Advent has 3 withdrawn or terminated deals out of 18: [MA-2018-0206], [MA-2019-0418] and [MA-2024-0042]. The last, a $1,114.0M deal in 2024, is recent."
+   },
+   {
+    "category": "valuation",
+    "detail": "Its median target margin is 14.5% against Atlas's 21.5%, and its in-set multiples range from 9.3x to 20.3x. Pricing a high-margin asset may need a stretch from its usual spread."
+   },
+   {
+    "category": "integration",
+    "detail": "Only 1 of its 18 deals is in Healthcare Services [MA-2024-0120], and its deals span 9 sectors, so sector-specific platform depth is limited."
+   }
+  ],
+  "conviction": {
+   "level": "High",
+   "rationale": "Staying at High: 6 closed in-band deals, 3 in the last 3 years, and a 13.4x median inside the peer IQR of 11.5-15.6x. Tempered by 3 withdrawn or terminated deals and only 1 Healthcare Services deal."
+  }
+ },
+ "status": "verified"
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buyer Comparison</title>
+<style>
+:root{--ink:#16202b;--mute:#5b6875;--line:#d9dee4;--soft:#f4f6f8;--accent:#0b4f7c;--both:#e6f2ea}
+body{font:13px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 16px}h1{font-size:20px}h3{color:var(--accent);margin:16px 0 4px}
+table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left}th{background:var(--soft)}
+tr.both{background:var(--both)}.mute{color:var(--mute)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<h1>Acquirer comparison</h1>
+<div class="grid">{% for side in [a, b] %}<div><h3>{{ side.r.target.name }}</h3>
+<div class="mute">{{ side.r.target.sector }} · ~${{ side.r.target.ev_mm|round(0)|int }}M · {{ side.r.target.geography }} · peer median {{ side.r.market.peer_set.ev_ebitda_median|default('n/a') }}x EV/EBITDA (n={{ side.r.market.peer_set.n }}) · <a href="{{ side.link }}">full report</a></div>
+<table><tr><th>#</th><th>Acquirer</th><th>Type</th><th>Conviction</th></tr>
+{% for p in side.r.pages %}<tr class="{{ 'both' if p.candidate.acquirer in overlap }}"><td>{{ p.rank }}</td><td>{{ p.candidate.acquirer }}</td><td>{{ p.candidate.acquirer_type }}</td><td>{{ p.rationale.conviction.level if p.rationale else '—' }}</td></tr>{% endfor %}
+</table></div>{% endfor %}</div>
+<h3>Overlap ({{ overlap|length }})</h3>
+<table><tr><th>Acquirer</th><th>Rank A</th><th>Rank B</th><th>Conviction A → B</th></tr>
+{% for row in overlap_rows %}<tr><td>{{ row.name }}</td><td>{{ row.ra }}</td><td>{{ row.rb }}</td><td>{{ row.ca }} → {{ row.cb }}</td></tr>{% endfor %}
+</table>
+<p class="mute">Highlighted rows appear on both lists. Buyers unique to one list are where the two targets' sector and size differences change the answer.</p>
+</div></body></html>

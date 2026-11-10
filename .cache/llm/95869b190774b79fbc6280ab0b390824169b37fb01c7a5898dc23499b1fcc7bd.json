@@ -1,0 +1,45 @@
+{
+ "rationale": {
+  "headline": "Warburg Pincus has closed 3 deals in the $200M band, but none of its 23 deals sit in Healthcare Services.",
+  "acquirer_overview": "Warburg Pincus is a financial sponsor with 23 deals in 2016-2024, 7 of them in the last 3 years. Its most frequent sectors are Home Health/Hospice (5) and Behavioral Health (4), with a size sweet spot of $21.5-293.4M (IQR). It most often buys from PE-Backed and Non-Profit sellers (7 each of 23), and Seller Financing and Stock are its most common financing (5 each). Its history shows a spread across adjacent services and health IT rather than a single-sector focus.",
+  "strategic_fit_thesis": "Project Atlas at $200M would be a platform for Warburg Pincus, measured against its 5 Platform Investment deals (median $102.3M) such as [MA-2023-0481] and [MA-2021-0441]. Deployment is active: 7 deals in the last 3 years, and 2 closed in the size band within that window, including [MA-2024-0186]. Against closest competitor New Mountain Capital, the difference is size-band depth: Warburg Pincus has 3 closed deals in the band versus 7 for New Mountain, and 0 deals in the target sector versus 1. Deal-type labels are noisy (Strategic Acquisition, Recapitalization, SPAC Merger), so the thesis rests on sizes and sectors rather than any single label. The Health IT precedents carried higher margins, such as 21.5% in [MA-2022-0252], which resembles the target's profile, but the sector is different.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2024-0186",
+    "why_relevant": "Most relevant closed control deal: Dental, $361.9M, 12.3x EV/EBITDA, earnout financing, 2 bidders, from 2024, which shows recent adjacent-sector activity."
+   },
+   {
+    "transaction_id": "MA-2023-0481",
+    "why_relevant": "Platform Investment in Health IT at $185.7M, close to the target's $200M, closed in 2023 with seller financing at 25.7x, so it shows platform logic but at a technology multiple."
+   },
+   {
+    "transaction_id": "MA-2022-0252",
+    "why_relevant": "Health IT deal at $219.2M with a 21.5% EBITDA margin, matching the target margin, but 23.3x with 5 bidders points to a different sector's pricing."
+   },
+   {
+    "transaction_id": "MA-2021-0441",
+    "why_relevant": "Platform Investment at $382.2M, 22.2% margin, closed all cash in 2021; shows it can fund platforms above the target size."
+   }
+  ],
+  "valuation_context": "On its own closed control comps (2 deals, adjacent sectors, similar size, including [MA-2024-0186]), Warburg Pincus has a median of 13.4x EV/EBITDA and 2.04x EV/revenue. Against Financial Sponsor peers at 13.5x, its pricing is in line with its peers (-0.1 turns). Its higher multiples of 19.4x to 25.7x came on Health IT platforms [MA-2021-0441][MA-2023-0481], not on services. [MA-2022-0450] is a minority deal and is not usable as a comp.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "6 of 23 deals were withdrawn or terminated, including [MA-2023-0191] in 2023 and [MA-2018-0413] at $432.3M, and [MA-2019-0204] is stale, pending or rumored; this is more than New Mountain's 4."
+   },
+   {
+    "category": "other",
+    "detail": "Zero of its 23 deals are in Healthcare Services, so the target sector would be new ground, and only 2 relevant closed deals support the comps."
+   },
+   {
+    "category": "financing_capacity",
+    "detail": "34.8% of its deals are leveraged or seller-financed, so the structure for a $200M platform may depend on seller paper; its largest closed deal of $2124.3M shows it can fund the size."
+   }
+  ],
+  "conviction": {
+   "level": "Low",
+   "rationale": "The suggested Low stands: 3 closed band deals and pricing in line with peers are offset by 6 of 23 withdrawn or terminated deals and 0 deals in Healthcare Services."
+  }
+ },
+ "status": "verified"
+}

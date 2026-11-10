@@ -1,0 +1,37 @@
+{
+ "rationale": {
+  "headline": "Ardent's two Healthcare Services deals top out at $68.0M closed, so a $200.0M target is a stretch.",
+  "acquirer_overview": "Ardent Health Services is a Strategic acquirer with 2 deals, both in 2022 and both within the last 3 years. Both are in Healthcare Services, with a size sweet spot of $81.0-107.2M (IQR) and Private sellers in 2 of 2 cases. Financing splits between Earnout and All Cash, 1 each. Its history shows regional diversification: one Southwest deal [MA-2022-0245] and one Mountain West deal [MA-2022-0389], tagged Geographic Expansion and Diversification.",
+  "strategic_fit_thesis": "Ardent's sector match is real: both deals are in Healthcare Services and both buy Private sellers, like Project Atlas. Footprint is the question, since its deals sit in the Southwest and Mountain West and the target region is not specified. Size is the constraint. The size role is stretch, because the target is above its largest closed deal ($68.0M). The Bolt-on Acquisition [MA-2022-0245] closed, while the SPAC Merger [MA-2022-0389] at $120.2M is still Pending and does not prove capacity. Versus closest competitor Nordic Capital, Ardent has 0 closed deals in the size band against 7, and 2 deals overall against 24. Nordic would treat the target as a platform. Deal labels are noisy, so this rests on the size evidence rather than on tags.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2022-0245",
+    "why_relevant": "Closed $68.0M Healthcare Services bolt-on in the Southwest from a Private seller, paid with an Earnout at 14.7x EV/EBITDA. It is Ardent's largest closed deal and usable as a comp."
+   },
+   {
+    "transaction_id": "MA-2022-0389",
+    "why_relevant": "$120.2M Healthcare Services deal in the Mountain West, All Cash, still Pending. It is the closest Ardent has come to the target's size, but it is a SPAC Merger and not usable as a control comp."
+   }
+  ],
+  "valuation_context": "Ardent has no closed control deals in the comp definition (n=0), so there is no pricing_vs_peers position to cite and no basis to say how it pays against peers. Its one usable closed comp is [MA-2022-0245] at 14.7x EV/EBITDA and 1.9x EV/revenue on a 15.8% margin target. The Pending [MA-2022-0389] at 17.9x is a SPAC Merger and is excluded as a control comp. Ardent's median target margin is 13.8%, below the 21.5% margin of Project Atlas.",
+  "risk_flags": [
+   {
+    "category": "financing_capacity",
+    "detail": "Largest closed deal is $68.0M [MA-2022-0245] against a $200.0M target, so the target is its largest deal; the only larger deal, $120.2M [MA-2022-0389], is Pending."
+   },
+   {
+    "category": "execution",
+    "detail": "Thin evidence: 2 deals, both from 2022, with no deal in the data since, and 1 of 2 not yet closed."
+   },
+   {
+    "category": "valuation",
+    "detail": "Ardent's targets carry a median margin of 13.8% versus 21.5% for Atlas, so it has not shown it pays for margin at this level."
+   }
+  ],
+  "conviction": {
+   "level": "Low",
+   "rationale": "Held at the suggested Low: 0 closed deals in the size band, largest closed deal $68.0M versus a $200.0M target, and only 2 deals in total. Offsetting this, both deals are in Healthcare Services and none were withdrawn."
+  }
+ },
+ "status": "verified"
+}

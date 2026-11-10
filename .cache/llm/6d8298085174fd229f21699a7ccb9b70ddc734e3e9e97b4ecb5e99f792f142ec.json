@@ -1,0 +1,45 @@
+{
+ "rationale": {
+  "headline": "Seven closed in-band deals and three Platform Investment deals make Atlas a platform-sized cheque for New Mountain.",
+  "acquirer_overview": "New Mountain Capital is a financial sponsor with 21 deals in 2015-2024, 5 in the last 3 years; most deals are in Behavioral Health (5) and Physician Groups (5), its size sweet spot is $47.2-250.0M (IQR), it most often buys from Private sellers (13 of 21), and its most common financing is Earnout (6 of 21). Its history centers on services platforms, with only 1 Healthcare Services deal; deal-type labels such as Platform Investment (3) and Recapitalization (3) are noisy.",
+  "strategic_fit_thesis": "Size role is platform, based on vs its 3 Platform Investment deals (median $314.8M), so a $200M Atlas would be a platform, not an add-on. Nearest platform precedents are [MA-2022-0377] at $228.4M and [MA-2022-0165] at $314.8M, both closed. [MA-2018-0470] is its one Healthcare Services deal, a $121.9M Leveraged Buyout with an 18.7% margin. On deployment pace, it has 5 deals in the last 3 years and 3 closed in-band deals in that window. Versus closest competitor Advent International, the difference is pricing: New Mountain's pricing position is below its peers while Advent's is in line with peers, on similar in-band depth (7 vs 6 closed). Tags such as Market Share and Cost Synergies are data points, not the thesis.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2022-0377",
+    "why_relevant": "Closed $228.4M Behavioral Health Platform Investment at 15.6x with a 17.4% margin; nearest size match and usable as a comp."
+   },
+   {
+    "transaction_id": "MA-2018-0470",
+    "why_relevant": "Its only Healthcare Services deal: $121.9M LBO at 12.3x, 18.7% margin, a single bidder, usable as a comp."
+   },
+   {
+    "transaction_id": "MA-2022-0165",
+    "why_relevant": "Closed $314.8M Platform Investment at 11.2x all cash, showing platform-sized cheques above the target size."
+   },
+   {
+    "transaction_id": "MA-2021-0464",
+    "why_relevant": "Closed $164.3M Revenue Cycle recapitalization at 15.3x with a 19.7% margin and 3 bidders, its highest-margin comp."
+   }
+  ],
+  "valuation_context": "Across 6 closed adjacent-sector control deals in the size range, New Mountain's median is 11.8x EV/EBITDA (interquartile 9.7-14.6x) and 2.35x EV/revenue. Against Financial Sponsor peers at a 13.5x median, its pricing position is below its peers. Its range runs from 8.2x [MA-2022-0393] to 15.6x [MA-2022-0377], and the top of that range went to a 17.4% margin platform. A 21.5% margin seller may push it above its usual median.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "4 of 21 deals were withdrawn or terminated, including [MA-2024-0216] in 2024 ($98.7M), and [MA-2020-0137] and [MA-2019-0119] are stale pending or rumored, so completion is not assured."
+   },
+   {
+    "category": "valuation",
+    "detail": "It prices below sponsor peers (11.8x vs 13.5x), and its median target margin is 15.9% against Atlas at 21.5%, so a price gap with the seller may arise."
+   },
+   {
+    "category": "integration",
+    "detail": "Only 1 of 21 deals is in Healthcare Services [MA-2018-0470] and 2 relevant closed deals, so direct sector evidence is thin."
+   }
+  ],
+  "conviction": {
+   "level": "High",
+   "rationale": "Staying at High: 7 closed deals in the size band, 3 of them in the last 3 years, and an 11.8x median inside the sponsor peer IQR of 11.5-15.6x. Tempered by 4 withdrawn or terminated deals."
+  }
+ },
+ "status": "repaired"
+}

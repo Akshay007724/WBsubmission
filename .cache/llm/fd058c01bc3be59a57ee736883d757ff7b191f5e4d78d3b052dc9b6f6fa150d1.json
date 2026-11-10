@@ -1,0 +1,41 @@
+{
+ "rationale": {
+  "headline": "All 3 Aspen deals are Dental, closed, and sized $168.1-391.6M, so Atlas is core-sized but outside its sector.",
+  "acquirer_overview": "Strategic acquirer with 3 deals in 2020-2022, 1 in the last 3 years; all 3 in Dental; size sweet spot $172.2-284.0M (IQR); most often buys from Non-Profit sellers (2 of 3); most common financing is Cash + Stock (2 of 3). Its deal history shows a single-sector focus on building dental platforms, with Platform Build the most distinctive tag at 2.8x market lift.",
+  "strategic_fit_thesis": "Atlas at $200.0M is core-sized for Aspen, inside its interquartile range $172.2-284.0M, and sits at the 67th percentile of its closed-deal sizes. All 3 closed deals fall in the size band [MA-2022-0229][MA-2020-0159][MA-2020-0247]. Footprint is mixed: National, Southeast and West Coast, so a regional target fits no pattern. Vertical integration is not visible; all deals are Dental, so Atlas would be a diversification step, and cross-sell appears only on [MA-2020-0159]. Versus closest competitor Hellman & Friedman, Aspen has 1 deal in the last 3 years against 5, and 3 deals against 15, so it is a far less active buyer. Aspen shows no withdrawn deals against 3 for H&F. Financing: 2 deals Cash + Stock, and 1 seller-financed, which indicates moderate capacity for $200M.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2022-0229",
+    "why_relevant": "Most recent and most relevant deal: $176.3M Dental bolt-on at 12.4x EV/EBITDA, Cash + Stock, 4 bidders, usable as comp."
+   },
+   {
+    "transaction_id": "MA-2020-0159",
+    "why_relevant": "Largest closed deal at $391.6M, 17.0x EV/EBITDA and 21.2% margin, close to Atlas's margin profile; usable as comp."
+   },
+   {
+    "transaction_id": "MA-2020-0247",
+    "why_relevant": "$168.1M West Coast deal at 13.2x with seller financing, the closest size to Atlas on the low side; usable as comp."
+   }
+  ],
+  "valuation_context": "Aspen's median of 13.2x EV/EBITDA across its 3 comps (range 12.4x-17.0x) is in line with its Strategic peers (median 14.2x, gap -1.0 turns). Its highest multiple, 17.0x, was paid on the 21.2% margin deal [MA-2020-0159], while the 14.7% and 15.5% margin deals cleared at 12.4x and 13.2x. Atlas's 21.5% margin would sit nearer the top deal, implying a higher price than Aspen's median.",
+  "risk_flags": [
+   {
+    "category": "integration",
+    "detail": "Aspen has 0 deals in Healthcare Services; all 3 are Dental, so Atlas is outside demonstrated sector experience."
+   },
+   {
+    "category": "execution",
+    "detail": "Only 1 deal in the last 3 years [MA-2022-0229], and the last deal year is 2022, so deployment pace is thin; evidence rests on 3 deals."
+   },
+   {
+    "category": "financing_capacity",
+    "detail": "Largest closed deal is $391.6M [MA-2020-0159] but 33.3% of its financing was seller-financed [MA-2020-0247], so cash capacity for $200M is untested beyond Cash + Stock."
+   }
+  ],
+  "conviction": {
+   "level": "Medium",
+   "rationale": "Starting at Medium: 3 of 3 closed deals sit in the size band and no withdrawn deals, but only 1 deal in the last 3 years and 0 in Healthcare Services keep it from High."
+  }
+ },
+ "status": "verified"
+}

@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acquirer-engine"
+version = "1.0.0"
+description = "Rank the most likely acquirers for a target and write data-cited one-page rationales."
+readme = "README.md"
+requires-python = ">=3.10"
+# Lower bounds: oldest versions with the APIs used (anthropic messages.parse/output_format, pandas
+# to_datetime(format="mixed")). Upper bounds: next major. CI runs the latest versions within these bounds.
+dependencies = [
+  "pandas>=2.0,<4",
+  "numpy>=1.26,<3",
+  "pydantic>=2.7,<3",
+  "jinja2>=3.1,<4",
+  "pyyaml>=6.0,<7",
+  "anthropic>=2.6,<3",
+  "openai>=1.50,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.10", "pandas-stubs>=2.2", "types-PyYAML>=6", "pip-audit>=2.7"]
+
+[project.scripts]
+acquirer-engine = "acquirer_engine.cli:main"
+
+[tool.setuptools]
+packages = ["acquirer_engine"]
+
+[tool.setuptools.package-data]
+acquirer_engine = ["templates/*.j2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+faulthandler_timeout = 60          # a hung test prints every thread's stack instead of stalling silently
+
+[tool.coverage.run]
+source = ["acquirer_engine"]
+omit = ["acquirer_engine/__main__.py"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "C4", "RUF", "D1"]
+ignore = [
+  "D105", "D107",   # magic methods / __init__ are self-describing here
+  "RUF001", "RUF002", "RUF003",   # en dashes and × in report text are intentional
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D1"]                  # test names describe the behaviour
+"tests/fixtures/*" = ["D1"]
+
+[tool.mypy]
+python_version = "3.10"
+packages = ["acquirer_engine"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = false             # pandas returns Any in many places; not useful noise
+strict_equality = true

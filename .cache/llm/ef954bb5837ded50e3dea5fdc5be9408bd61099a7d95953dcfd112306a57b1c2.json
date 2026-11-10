@@ -1,0 +1,45 @@
+{
+ "rationale": {
+  "headline": "Platform-sized fit: 6 closed adjacent deals in band, 5 deals in 3 years, but no Healthcare Services history.",
+  "acquirer_overview": "Hellman & Friedman is a financial sponsor with 15 deals in 2015-2024, 5 in the last 3 years, most in Physician Groups (3) and Home Health/Hospice (3). Its size sweet spot is $88.6-437.2M (IQR), it most often buys from Private sellers (7 of 15), and its most common financing is Leveraged and Mixed (4 each of 15). Its history shows a spread across provider and services niches rather than one sector, with 3 SPAC Merger labels in the mix.",
+  "strategic_fit_thesis": "The size role is platform, inside its interquartile range $88.6-437.2M, so Project Atlas at $200M would be a standalone platform rather than an add-on. Nearest adjacent evidence is physician and billing services: [MA-2024-0002] at $298.6M, 5 bidders, and [MA-2023-0379] at $446.8M in Revenue Cycle with a 24.2% margin, close to Atlas's 21.5%. Both are labelled Bolt-on Acquisition, a noisy label we treat only as a data point. Versus closest competitor Welsh Carson, H&F has fewer deals (15 vs 23) and fewer in the target sector (0 vs 1), and a similar median size ($187.3M vs $172.3M). Deployment pace is lower, 5 deals in the last 3 years vs 8. H&F's median size sits close to Atlas's $200M, but it has less pace and no sector history.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2024-0002",
+    "why_relevant": "Most recent and highest-relevance deal: $298.6M Physician Groups, Southeast, 13.3x EV/EBITDA, leveraged, usable as a control comp."
+   },
+   {
+    "transaction_id": "MA-2023-0379",
+    "why_relevant": "Revenue Cycle deal at $446.8M and 18.4x with a 24.2% margin, the closest margin match to Atlas; Private seller, 5 bidders."
+   },
+   {
+    "transaction_id": "MA-2020-0286",
+    "why_relevant": "Dental LBO at $427.6M, 13.0x, Private seller with stock financing and 2 bidders; shows a private-seller control deal in a services niche."
+   }
+  ],
+  "valuation_context": "On how it pays, H&F's closed adjacent control deals show a median 15.8x EV/EBITDA (n=6, interquartile 13.8x-16.3x), which is above its Financial Sponsor peers at 13.5x, a gap of 2.3 turns. Its precedents span 13.0x [MA-2020-0286] to 18.4x [MA-2023-0379], so a higher-margin target like Atlas could clear at the upper part of its own range. The 3 most relevant multiples are usable as control comps. The SPAC Merger [MA-2022-0007] is excluded as a comp.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "Three withdrawn deals: [MA-2015-0250] at $199.3M, [MA-2020-0447] at $187.3M and [MA-2022-0056] at $27.2M. The first two are almost exactly Atlas's size, so H&F has walked away from or lost deals at this scale."
+   },
+   {
+    "category": "other",
+    "detail": "Zero deals in Healthcare Services, the target sector, and only 2 relevant closed deals out of 15, so the sector-specific evidence is thin."
+   },
+   {
+    "category": "financing_capacity",
+    "detail": "33.3% of deals are leveraged or seller-financed, and 3 deals are stock-financed. A $200M platform sits well below its largest closed deal of $994.1M, so size is not the constraint."
+   },
+   {
+    "category": "competitive_process",
+    "detail": "Its precedents show up to 5 bidders [MA-2024-0002][MA-2023-0379] against an average of 2.8, so a contested process could test its above-peer pricing."
+   }
+  ],
+  "conviction": {
+   "level": "Medium",
+   "rationale": "Suggested Medium stands. Supports: 6 closed adjacent-sector deals in the size band, 2 in the last 3 years, and a platform size role. Against: 0 Healthcare Services deals and 3 withdrawn deals."
+  }
+ },
+ "status": "verified"
+}

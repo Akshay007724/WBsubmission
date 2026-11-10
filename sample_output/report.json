@@ -1,0 +1,4629 @@
+{
+ "target": {
+  "name": "Project Atlas (Healthcare Services target)",
+  "sector": "Healthcare Services",
+  "ev_mm": 200.0,
+  "geography": "Regional",
+  "ownership": "Private",
+  "ebitda_margin_pct": 21.5,
+  "notes": "Mid-market, private, regional, strong EBITDA margins"
+ },
+ "assumptions": [
+  "Target region not specified: every named region scores as a footprint match; national / multi-regional deals score slightly lower.",
+  "'Strong EBITDA margin' taken as the dataset 75th percentile: 21.5%.",
+  "Implied target EBITDA ~$12.8M = $200M EV / anchor median 15.6x (illustrative, not given).",
+  "Recency measured from the latest year in the data (2024), not today's date.",
+  "Stated multiples are used as given and never recomputed."
+ ],
+ "market": {
+  "peer_set": {
+   "role": "target value anchor: what a 21.5%-margin target should command (high-margin deals only; never use it to say a buyer pays below/above peers)",
+   "definition": "adjacent sectors, \u00b12.5x size, margin >= median",
+   "size_range_mm": [
+    80.0,
+    500.0
+   ],
+   "n": 28,
+   "ev_ebitda_median": 15.6,
+   "ev_revenue_median": 3.27,
+   "ev_ebitda_p25": 12.8,
+   "ev_ebitda_p75": 17.8,
+   "ev_revenue_p25": 2.65,
+   "ev_revenue_p75": 4.01,
+   "transaction_ids": [
+    "MA-2019-0076",
+    "MA-2022-0086",
+    "MA-2019-0090",
+    "MA-2022-0103",
+    "MA-2020-0159",
+    "MA-2019-0162",
+    "MA-2020-0185",
+    "MA-2022-0187",
+    "MA-2018-0188",
+    "MA-2022-0212",
+    "MA-2019-0228",
+    "MA-2020-0247",
+    "MA-2020-0286",
+    "MA-2020-0304",
+    "MA-2016-0313",
+    "MA-2022-0377",
+    "MA-2023-0378",
+    "MA-2023-0379",
+    "MA-2017-0414",
+    "MA-2022-0419",
+    "MA-2021-0439",
+    "MA-2017-0451",
+    "MA-2021-0453",
+    "MA-2021-0464",
+    "MA-2018-0470",
+    "MA-2022-0473",
+    "MA-2021-0479",
+    "MA-2020-0496"
+   ]
+  },
+  "widening_steps": [
+   "adjacent sectors, \u00b12.5x size, margin >= median: n=28"
+  ],
+  "excluded_deal_types": [
+   "Merger of Equals",
+   "Minority Investment",
+   "SPAC Merger"
+  ],
+  "pricing_peers_by_buyer_type": {
+   "Financial Sponsor": {
+    "definition": "Financial Sponsor closed control deals, adjacent sectors, \u00b12.5x size, any margin",
+    "n": 54,
+    "ev_ebitda_median": 13.5,
+    "ev_revenue_median": 2.54,
+    "ev_ebitda_p25": 11.5,
+    "ev_ebitda_p75": 15.6,
+    "ev_revenue_p25": 2.0,
+    "ev_revenue_p75": 3.23,
+    "transaction_ids": [
+     "MA-2024-0002",
+     "MA-2024-0020",
+     "MA-2016-0023",
+     "MA-2021-0025",
+     "MA-2019-0027",
+     "MA-2018-0034",
+     "MA-2017-0046",
+     "MA-2019-0063",
+     "MA-2024-0079",
+     "MA-2020-0094",
+     "MA-2020-0095",
+     "MA-2022-0103",
+     "MA-2023-0108",
+     "MA-2020-0109",
+     "MA-2024-0120",
+     "MA-2018-0122",
+     "MA-2015-0141",
+     "MA-2015-0145",
+     "MA-2017-0146",
+     "MA-2019-0157",
+     "MA-2019-0162",
+     "MA-2022-0165",
+     "MA-2020-0185",
+     "MA-2024-0186",
+     "MA-2019-0192",
+     "MA-2021-0195",
+     "MA-2019-0205",
+     "MA-2019-0228",
+     "MA-2019-0246",
+     "MA-2019-0271",
+     "MA-2023-0280",
+     "MA-2020-0286",
+     "MA-2019-0287",
+     "MA-2018-0303",
+     "MA-2020-0304",
+     "MA-2021-0310",
+     "MA-2016-0313",
+     "MA-2020-0343",
+     "MA-2019-0352",
+     "MA-2017-0359",
+     "MA-2021-0369",
+     "MA-2021-0375",
+     "MA-2022-0377",
+     "MA-2023-0378",
+     "MA-2023-0379",
+     "MA-2020-0383",
+     "MA-2020-0386",
+     "MA-2022-0393",
+     "MA-2022-0419",
+     "MA-2021-0439",
+     "MA-2021-0453",
+     "MA-2021-0464",
+     "MA-2018-0470",
+     "MA-2023-0499"
+    ]
+   },
+   "Strategic": {
+    "definition": "Strategic closed control deals, adjacent sectors, \u00b12.5x size, any margin",
+    "n": 30,
+    "ev_ebitda_median": 14.2,
+    "ev_revenue_median": 2.26,
+    "ev_ebitda_p25": 11.7,
+    "ev_ebitda_p75": 16.8,
+    "ev_revenue_p25": 1.9,
+    "ev_revenue_p75": 3.03,
+    "transaction_ids": [
+     "MA-2020-0010",
+     "MA-2021-0028",
+     "MA-2020-0032",
+     "MA-2017-0043",
+     "MA-2019-0076",
+     "MA-2022-0084",
+     "MA-2022-0086",
+     "MA-2019-0090",
+     "MA-2018-0104",
+     "MA-2020-0159",
+     "MA-2022-0187",
+     "MA-2018-0188",
+     "MA-2022-0212",
+     "MA-2021-0217",
+     "MA-2021-0223",
+     "MA-2022-0229",
+     "MA-2020-0247",
+     "MA-2020-0306",
+     "MA-2019-0394",
+     "MA-2020-0408",
+     "MA-2017-0414",
+     "MA-2021-0423",
+     "MA-2021-0434",
+     "MA-2017-0451",
+     "MA-2022-0457",
+     "MA-2022-0473",
+     "MA-2016-0474",
+     "MA-2021-0479",
+     "MA-2021-0490",
+     "MA-2020-0496"
+    ]
+   }
+  },
+  "peer_recent_3y": {
+   "n": 9,
+   "ev_ebitda_median": 16.2,
+   "ev_revenue_median": 3.32,
+   "ev_ebitda_p25": 11.6,
+   "ev_ebitda_p75": 19.4,
+   "ev_revenue_p25": 2.71,
+   "ev_revenue_p75": 3.68,
+   "transaction_ids": [
+    "MA-2022-0086",
+    "MA-2022-0103",
+    "MA-2022-0187",
+    "MA-2022-0212",
+    "MA-2022-0377",
+    "MA-2023-0378",
+    "MA-2023-0379",
+    "MA-2022-0419",
+    "MA-2022-0473"
+   ]
+  },
+  "same_sector_band": {
+   "definition": "Healthcare Services only, \u00b12.5x size",
+   "n": 10,
+   "ev_ebitda_median": 12.0,
+   "ev_revenue_median": 2.75,
+   "ev_ebitda_p25": 10.1,
+   "ev_ebitda_p75": 14.3,
+   "ev_revenue_p25": 2.48,
+   "ev_revenue_p75": 3.22,
+   "transaction_ids": [
+    "MA-2019-0090",
+    "MA-2024-0120",
+    "MA-2022-0187",
+    "MA-2021-0195",
+    "MA-2020-0304",
+    "MA-2020-0306",
+    "MA-2019-0352",
+    "MA-2020-0408",
+    "MA-2018-0470",
+    "MA-2020-0496"
+   ]
+  },
+  "target_margin_assumed_pct": 21.5,
+  "dataset_median_margin_pct": 15.5,
+  "implied_target_ebitda_mm": 12.8,
+  "implied_target_revenue_mm": 59.5
+ },
+ "pages": [
+  {
+   "rank": 1,
+   "candidate": {
+    "acquirer": "Nordic Capital",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.75,
+    "relevance_mass": 2.504,
+    "fit_quality": 0.101,
+    "best_match": 0.46,
+    "exec_penalty": 0.0,
+    "n_deals": 24,
+    "n_relevant": 7,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Nordic Capital",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 24,
+     "closed_deals": 21,
+     "deals_by_sector": {
+      "Physician Groups": 10,
+      "Healthcare Services": 4,
+      "Home Health/Hospice": 3,
+      "Behavioral Health": 3,
+      "Dental": 2,
+      "Medical Devices": 2
+     },
+     "deal_size_median_mm": 77.5,
+     "deal_size_min_mm": 6.5,
+     "largest_closed_deal_mm": 1304.4,
+     "first_year": 2016,
+     "last_year": 2024,
+     "deal_types": {
+      "Bolt-on Acquisition": 4,
+      "Leveraged Buyout": 3,
+      "Merger of Equals": 3,
+      "Platform Investment": 3,
+      "Recapitalization": 2,
+      "Strategic Acquisition": 2,
+      "Management Buyout": 2,
+      "Carve-out": 2,
+      "Minority Investment": 2,
+      "SPAC Merger": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Cost Synergies": 1.4,
+      "Platform Build": 1.2,
+      "Diversification": 1.2,
+      "Carve-out Complexity": 1.2
+     },
+     "geographies": {
+      "Mountain West": 5,
+      "West Coast": 4,
+      "Great Plains": 4,
+      "Southwest": 3,
+      "Midwest": 2,
+      "Mid-Atlantic": 2,
+      "Multi-Regional": 2,
+      "National": 1,
+      "Southeast": 1
+     },
+     "target_ownership": {
+      "Private": 9,
+      "PE-Backed": 9,
+      "Public": 5,
+      "Non-Profit": 1
+     },
+     "financing": {
+      "All Cash": 7,
+      "Seller Financing": 4,
+      "Stock": 3
+     },
+     "median_target_margin_pct": 12.7,
+     "median_target_growth_pct": 10.3,
+     "median_days_to_close": 223.0,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 7,
+     "recent_in_band_closed": 2
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 58,
+     "buyer_size_iqr_mm": [
+      35.0,
+      302.1
+     ],
+     "largest_closed_deal_mm": 1304.4,
+     "closed_deal_p90_mm": 483.2,
+     "capacity_basis": "closed deals",
+     "platform_deals": {
+      "n": 3,
+      "median_mm": 26.4
+     },
+     "size_role": "platform",
+     "size_role_basis": "inside its interquartile range $35.0-302.1M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2022-0103",
+      "target": "Highland Dental Solutions",
+      "year": 2022,
+      "sector": "Dental",
+      "geography": "Mountain West",
+      "deal_size_mm": 222.1,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 11.6,
+      "ev_revenue": 3.41,
+      "ebitda_margin_pct": 21.4,
+      "revenue_growth_pct": 11.2,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Earnout",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "Margin Improvement",
+       "Cross-sell"
+      ],
+      "relevance": 0.46,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2024-0431",
+      "target": "Principal Physician Group",
+      "year": 2024,
+      "sector": "Physician Groups",
+      "geography": "Midwest",
+      "deal_size_mm": 76.0,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 15.9,
+      "ev_revenue": 2.4,
+      "ebitda_margin_pct": 16.8,
+      "revenue_growth_pct": 14.3,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Diversification"
+      ],
+      "relevance": 0.37,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0310",
+      "target": "Green Multispecialty Group",
+      "year": 2021,
+      "sector": "Physician Groups",
+      "geography": "Southwest",
+      "deal_size_mm": 301.0,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 14.0,
+      "ev_revenue": 2.08,
+      "ebitda_margin_pct": 12.0,
+      "revenue_growth_pct": 6.7,
+      "outcome": "Closed",
+      "target_ownership": "Public",
+      "financing": "Cash + Stock",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Cross-sell"
+      ],
+      "relevance": 0.23,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2020-0386",
+      "target": "Horizon Dental Management",
+      "year": 2020,
+      "sector": "Dental",
+      "geography": "Mid-Atlantic",
+      "deal_size_mm": 248.6,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 16.4,
+      "ev_revenue": 3.04,
+      "ebitda_margin_pct": 13.0,
+      "revenue_growth_pct": 9.4,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Seller Financing",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "Diversification"
+      ],
+      "relevance": 0.22,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2023-0280",
+      "target": "Alliance Primary Care",
+      "year": 2023,
+      "sector": "Physician Groups",
+      "geography": "West Coast",
+      "deal_size_mm": 388.8,
+      "deal_type": "Leveraged Buyout",
+      "ev_ebitda": 13.4,
+      "ev_revenue": 1.24,
+      "ebitda_margin_pct": 7.4,
+      "revenue_growth_pct": 9.6,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "Cash + Stock",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 6,
+     "ev_ebitda_median": 13.8,
+     "ev_revenue_median": 2.08,
+     "ev_ebitda_p25": 13.4,
+     "ev_ebitda_p75": 14.7,
+     "ev_revenue_p25": 1.5,
+     "ev_revenue_p75": 2.8,
+     "transaction_ids": [
+      "MA-2022-0103",
+      "MA-2021-0310",
+      "MA-2020-0386",
+      "MA-2023-0280",
+      "MA-2020-0343",
+      "MA-2017-0046"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 13.8,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": 0.3,
+     "position": "in line with"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [],
+     "stale_pending_or_rumored": [
+      "MA-2020-0156",
+      "MA-2020-0291"
+     ],
+     "deals_in_target_sector": 4,
+     "large_deals_in_target_sector_mm": [
+      1304.4
+     ],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 9,
+     "largest_closed_deal_mm": 1304.4,
+     "largest_withdrawn_or_pending_mm": 232.9,
+     "avg_bidders": 2.0,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 29.2
+    },
+    "score": {
+     "acquirer": "Nordic Capital",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.75,
+     "relevance_mass": 2.504,
+     "fit_quality": 0.101,
+     "best_match": 0.46,
+     "exec_penalty": 0.0,
+     "n_deals": 24,
+     "n_relevant": 7,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 24 deals in 2016-2024, 9 in the last 3 years; most deals in Physician Groups (10), Healthcare Services (4); size sweet spot $35.0-302.1M (IQR); most often buys from Private and PE-Backed (9 each of 24) sellers; most common financing All Cash (7 of 24).",
+    "suggested_conviction": {
+     "level": "High",
+     "signals": [
+      "+2 7 closed adjacent-sector deals in the size band",
+      "+1 2 of those closed in the last 3 years",
+      "+1 median 13.8x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "+2 4 prior Healthcare Services deals",
+      "+1 no withdrawn/terminated deals"
+     ],
+     "points": 7.0
+    },
+    "closest_competitor": {
+     "acquirer": "New Mountain Capital",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.68,
+     "this_vs_them": {
+      "deals": [
+       24,
+       21
+      ],
+      "deals_in_target_sector": [
+       4,
+       1
+      ],
+      "deals_last_3y": [
+       9,
+       5
+      ],
+      "deal_size_median_mm": [
+       77.5,
+       121.9
+      ],
+      "pricing_position": [
+       "in line with",
+       "below"
+      ],
+      "withdrawn_or_terminated": [
+       0,
+       4
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Platform-sized sponsor with 9 deals in 3 years, 4 prior Healthcare Services deals and zero withdrawals",
+    "acquirer_overview": "Nordic Capital is a financial sponsor with 24 deals in 2016-2024, 9 of them in the last 3 years. Most deals are in Physician Groups (10) and Healthcare Services (4), with a size sweet spot of $35.0-302.1M (IQR). It most often buys from Private and PE-Backed sellers (9 each of 24), and its most common financing is All Cash (7 of 24). Its history shows a bias toward physician-led and dental assets, with a median target margin of 12.7% and median growth of 10.3%.",
+    "strategic_fit_thesis": "Project Atlas is a platform for Nordic Capital: size_role is platform, inside its interquartile range $35.0-302.1M. Its own platform-labelled deals are smaller (3 deals, median $26.4M), and the dataset's deal_type labels are noisy, so we rely on the size band rather than the label. For example, [MA-2022-0103], a $222.1M Dental deal at 21.4% margin, is tagged Bolt-on Acquisition yet also carries Platform Build. The closest competitor is New Mountain Capital. The sharpest difference is sector depth: Nordic has 4 deals in Healthcare Services against 1 for New Mountain. Nordic also has 9 deals in the last 3 years against 5, and 0 withdrawn or terminated deals against 4. Nordic has 7 closed deals in the size band, 2 of them recent, so it can deploy at this size.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2022-0103",
+      "why_relevant": "Closest precedent: $222.1M Dental deal, 21.4% margin, 11.6x EV/EBITDA, closed 2022, usable as comp and close to the target's margin and size."
+     },
+     {
+      "transaction_id": "MA-2024-0431",
+      "why_relevant": "Most recent in-band-style deal: $76.0M Physician Groups recapitalization at 15.9x with 1 bidder, showing pace in 2024."
+     },
+     {
+      "transaction_id": "MA-2021-0310",
+      "why_relevant": "$301.0M Physician Groups recapitalization at 14.0x, top of its size range, closed with 2 bidders."
+     },
+     {
+      "transaction_id": "MA-2023-0280",
+      "why_relevant": "$388.8M leveraged buyout at 13.4x on a 7.4% margin target, shows willingness to go above the target's size."
+     }
+    ],
+    "valuation_context": "Nordic's median of 13.8x across 6 comparable closed control deals (interquartile 13.4-14.7x) is in line with its Financial Sponsor peers at 13.5x, a 0.3 turn gap. Its highest-margin precedent, [MA-2022-0103] at 21.4%, cleared at 11.6x, while [MA-2024-0431] at a 16.8% margin went at 15.9x. Margin alone therefore does not set its price. Nordic's median target margin of 12.7% sits well below Atlas's 21.5%, so expect it to push on margin-adjusted value.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "Two stale pending or rumored deals, [MA-2020-0156] and [MA-2020-0291], with the largest withdrawn or pending at $232.9M, so announced intent has not always converted to closings."
+     },
+     {
+      "category": "valuation",
+      "detail": "Median target margin of 12.7% against Atlas's 21.5%; Nordic's high-margin precedent [MA-2022-0103] cleared at 11.6x, so its pricing may not reward margin."
+     },
+     {
+      "category": "other",
+      "detail": "Only 2 relevant closed deals out of 24 and 4 in the target sector; its largest closed deal of $1304.4M is far above Atlas, so sector evidence at this size is thin."
+     }
+    ],
+    "conviction": {
+     "level": "High",
+     "rationale": "Held at the suggested High: 7 closed adjacent-sector deals in the size band, 2 in the last 3 years, 4 prior Healthcare Services deals, and no withdrawn deals. Thin relevance (2 relevant closed deals) is the main caveat."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "1ad22ba18d86976467d5f2341d610a95f8e8cc46d8f4b925de14835dd508331b",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": null,
+   "top_signals": [
+    "+2 7 closed adjacent-sector deals in the size band",
+    "+2 4 prior Healthcare Services deals"
+   ]
+  },
+  {
+   "rank": 2,
+   "candidate": {
+    "acquirer": "New Mountain Capital",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.733,
+    "relevance_mass": 2.376,
+    "fit_quality": 0.109,
+    "best_match": 0.516,
+    "exec_penalty": 0.143,
+    "n_deals": 21,
+    "n_relevant": 7,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "New Mountain Capital",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 21,
+     "closed_deals": 14,
+     "deals_by_sector": {
+      "Behavioral Health": 5,
+      "Physician Groups": 5,
+      "Dental": 3,
+      "Revenue Cycle": 2,
+      "Health IT": 2,
+      "Healthcare Services": 1,
+      "Pharma/Biotech": 1,
+      "Home Health/Hospice": 1,
+      "Health Insurance": 1
+     },
+     "deal_size_median_mm": 121.9,
+     "deal_size_min_mm": 10.8,
+     "largest_closed_deal_mm": 590.2,
+     "first_year": 2015,
+     "last_year": 2024,
+     "deal_types": {
+      "Platform Investment": 3,
+      "Recapitalization": 3,
+      "Merger of Equals": 3,
+      "Leveraged Buyout": 2,
+      "Strategic Acquisition": 2,
+      "Management Buyout": 2,
+      "Bolt-on Acquisition": 2,
+      "Carve-out": 2,
+      "SPAC Merger": 2
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Market Share": 1.5,
+      "Carve-out Complexity": 1.4,
+      "Cost Synergies": 1.3
+     },
+     "geographies": {
+      "West Coast": 4,
+      "Great Plains": 3,
+      "Mountain West": 3,
+      "National": 3,
+      "Midwest": 2,
+      "Multi-Regional": 2,
+      "Mid-Atlantic": 1,
+      "Northeast": 1,
+      "Southwest": 1,
+      "Southeast": 1
+     },
+     "target_ownership": {
+      "Private": 13,
+      "Non-Profit": 3,
+      "PE-Backed": 3,
+      "Public": 2
+     },
+     "financing": {
+      "Earnout": 6,
+      "All Cash": 5,
+      "Cash + Stock": 4
+     },
+     "median_target_margin_pct": 15.9,
+     "median_target_growth_pct": 11.5,
+     "median_days_to_close": 222.0,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 7,
+     "recent_in_band_closed": 3
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 62,
+     "buyer_size_iqr_mm": [
+      47.2,
+      250.0
+     ],
+     "largest_closed_deal_mm": 590.2,
+     "closed_deal_p90_mm": 307.8,
+     "capacity_basis": "closed deals",
+     "platform_deals": {
+      "n": 3,
+      "median_mm": 314.8
+     },
+     "size_role": "platform",
+     "size_role_basis": "vs its 3 Platform Investment deals (median $314.8M)"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2022-0377",
+      "target": "National Behavioral Services",
+      "year": 2022,
+      "sector": "Behavioral Health",
+      "geography": "Midwest",
+      "deal_size_mm": 228.4,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 15.6,
+      "ev_revenue": 2.54,
+      "ebitda_margin_pct": 17.4,
+      "revenue_growth_pct": 20.9,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Cash + Stock",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Diversification"
+      ],
+      "relevance": 0.52,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2018-0470",
+      "target": "Evergreen Health Management",
+      "year": 2018,
+      "sector": "Healthcare Services",
+      "geography": "Midwest",
+      "deal_size_mm": 121.9,
+      "deal_type": "Leveraged Buyout",
+      "ev_ebitda": 12.3,
+      "ev_revenue": 3.28,
+      "ebitda_margin_pct": 18.7,
+      "revenue_growth_pct": 8.4,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Cash + Stock",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.32,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0165",
+      "target": "Coastal Psychiatric Services",
+      "year": 2022,
+      "sector": "Behavioral Health",
+      "geography": "Great Plains",
+      "deal_size_mm": 314.8,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 11.2,
+      "ev_revenue": 2.05,
+      "ebitda_margin_pct": 10.6,
+      "revenue_growth_pct": 9.3,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "Cross-sell"
+      ],
+      "relevance": 0.26,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0393",
+      "target": "Star Behavioral Health",
+      "year": 2022,
+      "sector": "Behavioral Health",
+      "geography": "West Coast",
+      "deal_size_mm": 291.4,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 8.2,
+      "ev_revenue": 2.17,
+      "ebitda_margin_pct": 9.4,
+      "revenue_growth_pct": 11.5,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Market Share"
+      ],
+      "relevance": 0.23,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0464",
+      "target": "Select Denial Management",
+      "year": 2021,
+      "sector": "Revenue Cycle",
+      "geography": "Multi-Regional",
+      "deal_size_mm": 164.3,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 15.3,
+      "ev_revenue": 4.37,
+      "ebitda_margin_pct": 19.7,
+      "revenue_growth_pct": 16.6,
+      "outcome": "Closed",
+      "target_ownership": "Public",
+      "financing": "Earnout",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Cost Synergies"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 6,
+     "ev_ebitda_median": 11.8,
+     "ev_revenue_median": 2.35,
+     "ev_ebitda_p25": 9.7,
+     "ev_ebitda_p75": 14.6,
+     "ev_revenue_p25": 2.08,
+     "ev_revenue_p75": 3.09,
+     "transaction_ids": [
+      "MA-2022-0377",
+      "MA-2018-0470",
+      "MA-2022-0165",
+      "MA-2022-0393",
+      "MA-2021-0464",
+      "MA-2019-0246"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 11.8,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": -1.7,
+     "position": "below"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2024-0216",
+       "outcome": "Withdrawn",
+       "year": 2024,
+       "deal_size_mm": 98.7
+      },
+      {
+       "transaction_id": "MA-2021-0234",
+       "outcome": "Withdrawn",
+       "year": 2021,
+       "deal_size_mm": 58.1
+      },
+      {
+       "transaction_id": "MA-2021-0029",
+       "outcome": "Withdrawn",
+       "year": 2021,
+       "deal_size_mm": 10.8
+      },
+      {
+       "transaction_id": "MA-2021-0401",
+       "outcome": "Withdrawn",
+       "year": 2021,
+       "deal_size_mm": 6931.9
+      }
+     ],
+     "stale_pending_or_rumored": [
+      "MA-2020-0137",
+      "MA-2019-0119"
+     ],
+     "deals_in_target_sector": 1,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 5,
+     "largest_closed_deal_mm": 590.2,
+     "largest_withdrawn_or_pending_mm": 6931.9,
+     "avg_bidders": 2.2,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 14.3
+    },
+    "score": {
+     "acquirer": "New Mountain Capital",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.733,
+     "relevance_mass": 2.376,
+     "fit_quality": 0.109,
+     "best_match": 0.516,
+     "exec_penalty": 0.143,
+     "n_deals": 21,
+     "n_relevant": 7,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 21 deals in 2015-2024, 5 in the last 3 years; most deals in Behavioral Health (5), Physician Groups (5); size sweet spot $47.2-250.0M (IQR); most often buys from Private (13 of 21) sellers; most common financing Earnout (6 of 21).",
+    "suggested_conviction": {
+     "level": "High",
+     "signals": [
+      "+2 7 closed adjacent-sector deals in the size band",
+      "+1 3 of those closed in the last 3 years",
+      "+1 median 11.8x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "+1 1 prior Healthcare Services deal(s)"
+     ],
+     "points": 5.0
+    },
+    "closest_competitor": {
+     "acquirer": "Advent International",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.27,
+     "this_vs_them": {
+      "deals": [
+       21,
+       18
+      ],
+      "closed_in_size_band": [
+       7,
+       6
+      ],
+      "deal_size_median_mm": [
+       121.9,
+       124.0
+      ],
+      "pricing_position": [
+       "below",
+       "in line with"
+      ],
+      "withdrawn_or_terminated": [
+       4,
+       3
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Seven closed in-band deals and three Platform Investment deals make Atlas a platform-sized cheque for New Mountain.",
+    "acquirer_overview": "New Mountain Capital is a financial sponsor with 21 deals in 2015-2024, 5 in the last 3 years; most deals are in Behavioral Health (5) and Physician Groups (5), its size sweet spot is $47.2-250.0M (IQR), it most often buys from Private sellers (13 of 21), and its most common financing is Earnout (6 of 21). Its history centers on services platforms, with only 1 Healthcare Services deal; deal-type labels such as Platform Investment (3) and Recapitalization (3) are noisy.",
+    "strategic_fit_thesis": "Size role is platform, based on vs its 3 Platform Investment deals (median $314.8M), so a $200M Atlas would be a platform, not an add-on. Nearest platform precedents are [MA-2022-0377] at $228.4M and [MA-2022-0165] at $314.8M, both closed. [MA-2018-0470] is its one Healthcare Services deal, a $121.9M Leveraged Buyout with an 18.7% margin. On deployment pace, it has 5 deals in the last 3 years and 3 closed in-band deals in that window. Versus closest competitor Advent International, the difference is pricing: New Mountain's pricing position is below its peers while Advent's is in line with peers, on similar in-band depth (7 vs 6 closed). Tags such as Market Share and Cost Synergies are data points, not the thesis.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2022-0377",
+      "why_relevant": "Closed $228.4M Behavioral Health Platform Investment at 15.6x with a 17.4% margin; nearest size match and usable as a comp."
+     },
+     {
+      "transaction_id": "MA-2018-0470",
+      "why_relevant": "Its only Healthcare Services deal: $121.9M LBO at 12.3x, 18.7% margin, a single bidder, usable as a comp."
+     },
+     {
+      "transaction_id": "MA-2022-0165",
+      "why_relevant": "Closed $314.8M Platform Investment at 11.2x all cash, showing platform-sized cheques above the target size."
+     },
+     {
+      "transaction_id": "MA-2021-0464",
+      "why_relevant": "Closed $164.3M Revenue Cycle recapitalization at 15.3x with a 19.7% margin and 3 bidders, its highest-margin comp."
+     }
+    ],
+    "valuation_context": "Across 6 closed adjacent-sector control deals in the size range, New Mountain's median is 11.8x EV/EBITDA (interquartile 9.7-14.6x) and 2.35x EV/revenue. Against Financial Sponsor peers at a 13.5x median, its pricing position is below its peers. Its range runs from 8.2x [MA-2022-0393] to 15.6x [MA-2022-0377], and the top of that range went to a 17.4% margin platform. A 21.5% margin seller may push it above its usual median.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "4 of 21 deals were withdrawn or terminated, including [MA-2024-0216] in 2024 ($98.7M), and [MA-2020-0137] and [MA-2019-0119] are stale pending or rumored, so completion is not assured."
+     },
+     {
+      "category": "valuation",
+      "detail": "It prices below sponsor peers (11.8x vs 13.5x), and its median target margin is 15.9% against Atlas at 21.5%, so a price gap with the seller may arise."
+     },
+     {
+      "category": "integration",
+      "detail": "Only 1 of 21 deals is in Healthcare Services [MA-2018-0470] and 2 relevant closed deals, so direct sector evidence is thin."
+     }
+    ],
+    "conviction": {
+     "level": "High",
+     "rationale": "Staying at High: 7 closed deals in the size band, 3 of them in the last 3 years, and an 11.8x median inside the sponsor peer IQR of 11.5-15.6x. Tempered by 4 withdrawn or terminated deals."
+    }
+   },
+   "status": "repaired",
+   "issues": [],
+   "cached": true,
+   "cache_key": "6d8298085174fd229f21699a7ccb9b70ddc734e3e9e97b4ecb5e99f792f142ec",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": null,
+   "top_signals": [
+    "+2 7 closed adjacent-sector deals in the size band",
+    "+1 3 of those closed in the last 3 years"
+   ]
+  },
+  {
+   "rank": 3,
+   "candidate": {
+    "acquirer": "Blackstone",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.681,
+    "relevance_mass": 2.327,
+    "fit_quality": 0.091,
+    "best_match": 0.383,
+    "exec_penalty": 0.0,
+    "n_deals": 25,
+    "n_relevant": 7,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Blackstone",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 25,
+     "closed_deals": 22,
+     "deals_by_sector": {
+      "Health Insurance": 6,
+      "Revenue Cycle": 4,
+      "Health IT": 3,
+      "Healthcare Services": 2,
+      "Dental": 2,
+      "Physician Groups": 2,
+      "Behavioral Health": 2,
+      "Medical Devices": 2,
+      "Home Health/Hospice": 1,
+      "Pharma/Biotech": 1
+     },
+     "deal_size_median_mm": 341.7,
+     "deal_size_min_mm": 10.5,
+     "largest_closed_deal_mm": 14353.7,
+     "first_year": 2015,
+     "last_year": 2024,
+     "deal_types": {
+      "Leveraged Buyout": 7,
+      "Bolt-on Acquisition": 5,
+      "Platform Investment": 4,
+      "SPAC Merger": 2,
+      "Recapitalization": 2,
+      "Minority Investment": 2,
+      "Strategic Acquisition": 2,
+      "Management Buyout": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Platform Build": 1.5,
+      "Market Share": 1.5,
+      "Scale": 1.5,
+      "Vertical Integration": 1.3
+     },
+     "geographies": {
+      "Multi-Regional": 5,
+      "Southwest": 4,
+      "Northeast": 4,
+      "West Coast": 3,
+      "Mountain West": 2,
+      "Midwest": 2,
+      "Mid-Atlantic": 2,
+      "Great Plains": 1,
+      "National": 1,
+      "Southeast": 1
+     },
+     "target_ownership": {
+      "Private": 9,
+      "PE-Backed": 8,
+      "Non-Profit": 5,
+      "Public": 3
+     },
+     "financing": {
+      "Stock": 6,
+      "Earnout": 5,
+      "All Cash": 4
+     },
+     "median_target_margin_pct": 16.2,
+     "median_target_growth_pct": 13.4,
+     "median_days_to_close": 155.0,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 6,
+     "recent_in_band_closed": 1
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 32,
+     "buyer_size_iqr_mm": [
+      70.7,
+      595.7
+     ],
+     "largest_closed_deal_mm": 14353.7,
+     "closed_deal_p90_mm": 1891.3,
+     "capacity_basis": "closed deals",
+     "platform_deals": {
+      "n": 4,
+      "median_mm": 1102.8
+     },
+     "size_role": "add-on",
+     "size_role_basis": "vs its 4 Platform Investment deals (median $1102.8M)"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2021-0195",
+      "target": "Evergreen Care Solutions",
+      "year": 2021,
+      "sector": "Healthcare Services",
+      "geography": "Southwest",
+      "deal_size_mm": 299.0,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 14.6,
+      "ev_revenue": 2.45,
+      "ebitda_margin_pct": 12.9,
+      "revenue_growth_pct": 17.5,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Vertical Integration"
+      ],
+      "relevance": 0.38,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0453",
+      "target": "North Smile Group",
+      "year": 2021,
+      "sector": "Dental",
+      "geography": "Mountain West",
+      "deal_size_mm": 222.5,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 13.5,
+      "ev_revenue": 2.76,
+      "ebitda_margin_pct": 20.1,
+      "revenue_growth_pct": 12.7,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 4,
+      "tags": [
+       "Geographic Expansion",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.31,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0407",
+      "target": "Peak Medical Management",
+      "year": 2021,
+      "sector": "Healthcare Services",
+      "geography": "Midwest",
+      "deal_size_mm": 341.7,
+      "deal_type": "SPAC Merger",
+      "ev_ebitda": 10.0,
+      "ev_revenue": 1.52,
+      "ebitda_margin_pct": 16.2,
+      "revenue_growth_pct": 10.2,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Earnout",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.25,
+      "usable_as_comp": false
+     },
+     {
+      "transaction_id": "MA-2023-0378",
+      "target": "Sterling Revenue Cycle",
+      "year": 2023,
+      "sector": "Revenue Cycle",
+      "geography": "Mid-Atlantic",
+      "deal_size_mm": 458.4,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 16.2,
+      "ev_revenue": 3.32,
+      "ebitda_margin_pct": 20.9,
+      "revenue_growth_pct": 15.4,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Leveraged",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.24,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2018-0122",
+      "target": "Western Multispecialty Group",
+      "year": 2018,
+      "sector": "Physician Groups",
+      "geography": "Mountain West",
+      "deal_size_mm": 251.7,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 9.7,
+      "ev_revenue": 1.19,
+      "ebitda_margin_pct": 11.4,
+      "revenue_growth_pct": 18.1,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Market Share"
+      ],
+      "relevance": 0.19,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 5,
+     "ev_ebitda_median": 14.6,
+     "ev_revenue_median": 2.76,
+     "ev_ebitda_p25": 13.5,
+     "ev_ebitda_p75": 16.2,
+     "ev_revenue_p25": 2.45,
+     "ev_revenue_p75": 3.32,
+     "transaction_ids": [
+      "MA-2021-0195",
+      "MA-2021-0453",
+      "MA-2023-0378",
+      "MA-2018-0122",
+      "MA-2019-0162"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 14.6,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": 1.1,
+     "position": "above"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2020-0040",
+       "outcome": "Withdrawn",
+       "year": 2020,
+       "deal_size_mm": 54.0
+      },
+      {
+       "transaction_id": "MA-2024-0347",
+       "outcome": "Withdrawn",
+       "year": 2024,
+       "deal_size_mm": 1905.7
+      }
+     ],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 2,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 6,
+     "largest_closed_deal_mm": 14353.7,
+     "largest_withdrawn_or_pending_mm": 1905.7,
+     "avg_bidders": 2.5,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 20.0
+    },
+    "score": {
+     "acquirer": "Blackstone",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.681,
+     "relevance_mass": 2.327,
+     "fit_quality": 0.091,
+     "best_match": 0.383,
+     "exec_penalty": 0.0,
+     "n_deals": 25,
+     "n_relevant": 7,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 25 deals in 2015-2024, 6 in the last 3 years; most deals in Health Insurance (6), Revenue Cycle (4); size sweet spot $70.7-595.7M (IQR); most often buys from Private (9 of 25) sellers; most common financing Stock (6 of 25).",
+    "suggested_conviction": {
+     "level": "Medium",
+     "signals": [
+      "+2 6 closed adjacent-sector deals in the size band",
+      "+0.5 1 of those closed in the last 3 years",
+      "+1 median 14.6x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "+1 2 prior Healthcare Services deal(s)"
+     ],
+     "points": 4.5
+    },
+    "closest_competitor": {
+     "acquirer": "Hellman & Friedman",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.86,
+     "this_vs_them": {
+      "deals": [
+       25,
+       15
+      ],
+      "deals_in_target_sector": [
+       2,
+       0
+      ],
+      "deals_last_3y": [
+       6,
+       5
+      ],
+      "deal_size_median_mm": [
+       341.7,
+       187.3
+      ],
+      "size_role": [
+       "add-on",
+       "platform"
+      ],
+      "withdrawn_or_terminated": [
+       2,
+       3
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Blackstone has 6 closed deals in the size band and pays 1.1 turns above sponsor peers, but 2 withdrawals cap conviction.",
+    "acquirer_overview": "Financial sponsor: 25 deals in 2015-2024, 6 in the last 3 years; most deals in Health Insurance (6) and Revenue Cycle (4); size sweet spot $70.7-595.7M (IQR); most often buys from Private sellers (9 of 25); most common financing is Stock (6 of 25). Its history is spread across 10 sectors, with Health Insurance and Revenue Cycle together making up 10 deals, so priorities lean toward those two rather than Healthcare Services, where it has 2 deals.",
+    "strategic_fit_thesis": "As a sponsor, Blackstone would treat a $200M target as an add-on, not a platform: size_role is add-on, measured against its 4 Platform Investment deals (median $1102.8M). That means it would come via an existing portfolio company or platform. The target sits at the 32nd percentile of its deal sizes, and 6 closed deals fall in the size band, including Evergreen Care Solutions, a Healthcare Services bolt-on at $299.0M [MA-2021-0195]. Deployment pace is 6 deals in the last 3 years. Versus closest competitor Hellman & Friedman, Blackstone has 2 Healthcare Services deals against 0 and a median deal of $341.7M against $187.3M. Hellman & Friedman would see the target as a platform. Labels such as Bolt-on Acquisition (5) and Platform Investment (4) are noisy and are only supporting data points.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2021-0195",
+      "why_relevant": "Healthcare Services bolt-on at $299.0M, 14.6x EV/EBITDA, all cash, closed; the nearest sector and size match. Usable as comp."
+     },
+     {
+      "transaction_id": "MA-2021-0453",
+      "why_relevant": "Dental management buyout at $222.5M, 13.5x, with a 20.1% margin close to the target's profile, and 4 bidders. Usable as comp."
+     },
+     {
+      "transaction_id": "MA-2023-0378",
+      "why_relevant": "Revenue Cycle bolt-on at $458.4M, 16.2x, 20.9% margin; the most recent in-band close for this buyer. Usable as comp."
+     },
+     {
+      "transaction_id": "MA-2021-0407",
+      "why_relevant": "Healthcare Services SPAC Merger at $341.7M, 10.0x; shows sector presence but is not usable as a control comp."
+     }
+    ],
+    "valuation_context": "Blackstone's closed control comps (5 deals, adjacent sectors, similar size) show a median of 14.6x EV/EBITDA and 2.76x EV/revenue, with an interquartile range of 13.5x-16.2x. Against its Financial Sponsor peers (median 13.5x, n=54), its pricing is above, by 1.1 turns. Expect it to bid at the upper part of the sponsor range. The SPAC deal at 10.0x [MA-2021-0407] is excluded as a control comp.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "Two withdrawn deals, [MA-2020-0040] at $54.0M and [MA-2024-0347] at $1905.7M in 2024, so the latest large attempt did not close."
+     },
+     {
+      "category": "valuation",
+      "detail": "It prices 1.1 turns above sponsor peers (14.6x vs 13.5x), so its pricing leaves less room for a margin-based bargain."
+     },
+     {
+      "category": "integration",
+      "detail": "Only 2 of 25 deals are in Healthcare Services and only 1 in-band deal closed in the last 3 years, so evidence for this exact sector and pace is thin."
+     }
+    ],
+    "conviction": {
+     "level": "Medium",
+     "rationale": "Staying at the suggested Medium: 6 closed in-band deals and a 14.6x median inside the sponsor IQR support it, but only 1 recent in-band close and 2 withdrawals prevent an upgrade."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "367d15a65a7adeed429704aa36a52a1c89c89fa8ca450813f735713db80b2474",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #3 on score (overall comparable-deal activity) with Medium conviction (direct evidence: 4.5 evidence pts; +2 6 closed adjacent-sector deals in the size band; +1 median 14.6x sits inside Financial Sponsor peer IQR 11.5-15.6x): it outranks Advent International (5 pts), Welsh Carson (5 pts) on overall activity, but they have more direct evidence for this deal.",
+   "top_signals": [
+    "+2 6 closed adjacent-sector deals in the size band",
+    "+1 median 14.6x sits inside Financial Sponsor peer IQR 11.5-15.6x"
+   ]
+  },
+  {
+   "rank": 4,
+   "candidate": {
+    "acquirer": "Advent International",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.631,
+    "relevance_mass": 1.8,
+    "fit_quality": 0.097,
+    "best_match": 0.52,
+    "exec_penalty": 0.0,
+    "n_deals": 18,
+    "n_relevant": 3,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Advent International",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 18,
+     "closed_deals": 15,
+     "deals_by_sector": {
+      "Behavioral Health": 3,
+      "Revenue Cycle": 3,
+      "Dental": 3,
+      "Health Insurance": 3,
+      "Medical Devices": 2,
+      "Healthcare Services": 1,
+      "Health IT": 1,
+      "Physician Groups": 1,
+      "Pharma/Biotech": 1
+     },
+     "deal_size_median_mm": 124.0,
+     "deal_size_min_mm": 13.5,
+     "largest_closed_deal_mm": 5536.6,
+     "first_year": 2016,
+     "last_year": 2024,
+     "deal_types": {
+      "Recapitalization": 4,
+      "Merger of Equals": 3,
+      "Leveraged Buyout": 3,
+      "Management Buyout": 2,
+      "SPAC Merger": 2,
+      "Platform Investment": 2,
+      "Minority Investment": 1,
+      "Bolt-on Acquisition": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Margin Improvement": 1.3,
+      "Vertical Integration": 1.2
+     },
+     "geographies": {
+      "National": 5,
+      "Southeast": 4,
+      "Great Plains": 3,
+      "Southwest": 2,
+      "Mountain West": 1,
+      "Midwest": 1,
+      "West Coast": 1,
+      "Northeast": 1
+     },
+     "target_ownership": {
+      "PE-Backed": 8,
+      "Private": 6,
+      "Public": 3,
+      "Non-Profit": 1
+     },
+     "financing": {
+      "All Cash": 6,
+      "Leveraged": 4,
+      "Stock": 2
+     },
+     "median_target_margin_pct": 14.5,
+     "median_target_growth_pct": 12.4,
+     "median_days_to_close": 278.0,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 6,
+     "recent_in_band_closed": 3
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 61,
+     "buyer_size_iqr_mm": [
+      67.3,
+      312.1
+     ],
+     "largest_closed_deal_mm": 5536.6,
+     "closed_deal_p90_mm": 3314.4,
+     "capacity_basis": "closed deals",
+     "platform_deals": {
+      "n": 2,
+      "median_mm": 29.6
+     },
+     "size_role": "platform",
+     "size_role_basis": "inside its interquartile range $67.3-312.1M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2024-0120",
+      "target": "Crest Care Partners",
+      "year": 2024,
+      "sector": "Healthcare Services",
+      "geography": "Southeast",
+      "deal_size_mm": 303.9,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 9.3,
+      "ev_revenue": 3.36,
+      "ebitda_margin_pct": 13.9,
+      "revenue_growth_pct": 15.5,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Stock",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Vertical Integration"
+      ],
+      "relevance": 0.52,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2023-0108",
+      "target": "Crown Addiction Treatment",
+      "year": 2023,
+      "sector": "Behavioral Health",
+      "geography": "Mountain West",
+      "deal_size_mm": 123.0,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 14.6,
+      "ev_revenue": 3.23,
+      "ebitda_margin_pct": 14.5,
+      "revenue_growth_pct": 17.1,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "All Cash",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Market Share"
+      ],
+      "relevance": 0.39,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0419",
+      "target": "Star Practice Management",
+      "year": 2022,
+      "sector": "Revenue Cycle",
+      "geography": "Southwest",
+      "deal_size_mm": 105.9,
+      "deal_type": "Recapitalization",
+      "ev_ebitda": 20.3,
+      "ev_revenue": 3.68,
+      "ebitda_margin_pct": 21.8,
+      "revenue_growth_pct": 12.6,
+      "outcome": "Closed",
+      "target_ownership": "Public",
+      "financing": "Leveraged",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Margin Improvement",
+       "Cost Synergies"
+      ],
+      "relevance": 0.22,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0341",
+      "target": "Principal Counseling",
+      "year": 2021,
+      "sector": "Behavioral Health",
+      "geography": "Great Plains",
+      "deal_size_mm": 163.0,
+      "deal_type": "Minority Investment",
+      "ev_ebitda": 13.2,
+      "ev_revenue": 1.85,
+      "ebitda_margin_pct": 10.8,
+      "revenue_growth_pct": 16.3,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Earnout",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Diversification"
+      ],
+      "relevance": 0.14,
+      "usable_as_comp": false
+     },
+     {
+      "transaction_id": "MA-2018-0184",
+      "target": "Summit DSO",
+      "year": 2018,
+      "sector": "Dental",
+      "geography": "Midwest",
+      "deal_size_mm": 303.1,
+      "deal_type": "Merger of Equals",
+      "ev_ebitda": 11.7,
+      "ev_revenue": 3.05,
+      "ebitda_margin_pct": 20.2,
+      "revenue_growth_pct": 6.5,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "All Cash",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.12,
+      "usable_as_comp": false
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 4,
+     "ev_ebitda_median": 13.4,
+     "ev_revenue_median": 3.29,
+     "ev_ebitda_p25": 11.6,
+     "ev_ebitda_p75": 16.0,
+     "ev_revenue_p25": 3.22,
+     "ev_revenue_p75": 3.44,
+     "transaction_ids": [
+      "MA-2024-0120",
+      "MA-2023-0108",
+      "MA-2022-0419",
+      "MA-2019-0027"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 13.4,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": -0.1,
+     "position": "in line with"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2018-0206",
+       "outcome": "Withdrawn",
+       "year": 2018,
+       "deal_size_mm": 125.0
+      },
+      {
+       "transaction_id": "MA-2019-0418",
+       "outcome": "Terminated",
+       "year": 2019,
+       "deal_size_mm": 58.0
+      },
+      {
+       "transaction_id": "MA-2024-0042",
+       "outcome": "Withdrawn",
+       "year": 2024,
+       "deal_size_mm": 1114.0
+      }
+     ],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 1,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 5,
+     "largest_closed_deal_mm": 5536.6,
+     "largest_withdrawn_or_pending_mm": 1114.0,
+     "avg_bidders": 2.3,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 33.3
+    },
+    "score": {
+     "acquirer": "Advent International",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.631,
+     "relevance_mass": 1.8,
+     "fit_quality": 0.097,
+     "best_match": 0.52,
+     "exec_penalty": 0.0,
+     "n_deals": 18,
+     "n_relevant": 3,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 18 deals in 2016-2024, 5 in the last 3 years; most deals in Behavioral Health (3), Revenue Cycle (3); size sweet spot $67.3-312.1M (IQR); most often buys from PE-Backed (8 of 18) sellers; most common financing All Cash (6 of 18).",
+    "suggested_conviction": {
+     "level": "High",
+     "signals": [
+      "+2 6 closed adjacent-sector deals in the size band",
+      "+1 3 of those closed in the last 3 years",
+      "+1 median 13.4x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "+1 1 prior Healthcare Services deal(s)"
+     ],
+     "points": 5.0
+    },
+    "closest_competitor": {
+     "acquirer": "New Mountain Capital",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.27,
+     "this_vs_them": {
+      "deals": [
+       18,
+       21
+      ],
+      "closed_in_size_band": [
+       6,
+       7
+      ],
+      "deal_size_median_mm": [
+       124.0,
+       121.9
+      ],
+      "pricing_position": [
+       "in line with",
+       "below"
+      ],
+      "withdrawn_or_terminated": [
+       3,
+       4
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Advent has closed 6 deals in the $67.3-312.1M band, 3 of them recently, so Project Atlas fits as a platform.",
+    "acquirer_overview": "Advent International is a financial sponsor with 18 deals in 2016-2024, 5 of them in the last 3 years. Its most frequent sectors are Behavioral Health (3) and Revenue Cycle (3), and its size sweet spot is $67.3-312.1M (IQR). It most often buys from PE-Backed sellers (8 of 18), and All Cash is its most common financing (6 of 18). Its history spreads across 9 sectors, with Recapitalization (4) the most common deal type label, so it reads as a broad deployer rather than a single-sector specialist.",
+    "strategic_fit_thesis": "Project Atlas at $200M is a platform for Advent, inside its interquartile range of $67.3-312.1M. Advent has 6 closed deals in the size band, 3 of them in the last 3 years, and its closed control comps in adjacent sectors include [MA-2024-0120] (Healthcare Services, $303.9M) and [MA-2023-0108] ($123.0M). Its 2 platform-labelled deals have a median of $29.6M, so the label is a weak guide and we lean on size and recency instead. The closest competitor is New Mountain Capital, which has 21 deals against Advent's 18 and 7 closed in the band against 6. The sharpest difference is pricing: Advent pays in line with its peers, while New Mountain pays below. That matters if the client wants a buyer that will not anchor low. Advent has only 1 prior Healthcare Services deal, so sector depth is thinner than its deployment pace.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2024-0120",
+      "why_relevant": "Closed 2024 Healthcare Services recapitalization at $303.9M and 9.3x EV/EBITDA, financed with stock; the same sector as Atlas and usable as a comp."
+     },
+     {
+      "transaction_id": "MA-2023-0108",
+      "why_relevant": "Closed 2023 Behavioral Health recapitalization at $123.0M and 14.6x, all cash, with a single bidder; shows recent in-band deployment."
+     },
+     {
+      "transaction_id": "MA-2022-0419",
+      "why_relevant": "Closed 2022 Revenue Cycle deal at $105.9M and 20.3x with a 21.8% margin, close to Atlas's margin profile; leveraged financing."
+     }
+    ],
+    "valuation_context": "Advent's 4 closed control comps in adjacent sectors and in size range show a median of 13.4x EV/EBITDA (interquartile 11.6-16.0x) and 3.29x EV/revenue [MA-2024-0120][MA-2023-0108][MA-2022-0419]. Against Financial Sponsor peers, Advent pays in line with its peers (13.4x vs 13.5x, a gap of -0.1 turns). The highest multiple in its set, 20.3x, came with a 21.8% margin [MA-2022-0419]. The lowest, 9.3x, came from a 13.9% margin non-profit seller [MA-2024-0120]. Margin therefore appears to drive its price spread.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "Advent has 3 withdrawn or terminated deals out of 18: [MA-2018-0206], [MA-2019-0418] and [MA-2024-0042]. The last, a $1,114.0M deal in 2024, is recent."
+     },
+     {
+      "category": "valuation",
+      "detail": "Its median target margin is 14.5% against Atlas's 21.5%, and its in-set multiples range from 9.3x to 20.3x. Pricing a high-margin asset may need a stretch from its usual spread."
+     },
+     {
+      "category": "integration",
+      "detail": "Only 1 of its 18 deals is in Healthcare Services [MA-2024-0120], and its deals span 9 sectors, so sector-specific platform depth is limited."
+     }
+    ],
+    "conviction": {
+     "level": "High",
+     "rationale": "Staying at High: 6 closed in-band deals, 3 in the last 3 years, and a 13.4x median inside the peer IQR of 11.5-15.6x. Tempered by 3 withdrawn or terminated deals and only 1 Healthcare Services deal."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "8f4fed3a1ce037ae2aa46b1d629c9201452b38004746db77e53f98e77b481157",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #4 on score (overall comparable-deal activity) with High conviction (direct evidence: 5 evidence pts; +2 6 closed adjacent-sector deals in the size band; +1 3 of those closed in the last 3 years): Blackstone (4.5 pts) rank higher on overall activity but have less direct evidence for this deal.",
+   "top_signals": [
+    "+2 6 closed adjacent-sector deals in the size band",
+    "+1 3 of those closed in the last 3 years"
+   ]
+  },
+  {
+   "rank": 5,
+   "candidate": {
+    "acquirer": "Hellman & Friedman",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.594,
+    "relevance_mass": 1.603,
+    "fit_quality": 0.102,
+    "best_match": 0.477,
+    "exec_penalty": 0.0,
+    "n_deals": 15,
+    "n_relevant": 4,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Hellman & Friedman",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 15,
+     "closed_deals": 12,
+     "deals_by_sector": {
+      "Physician Groups": 3,
+      "Home Health/Hospice": 3,
+      "Revenue Cycle": 2,
+      "Dental": 2,
+      "Health Insurance": 2,
+      "Health IT": 1,
+      "Pharma/Biotech": 1,
+      "Medical Devices": 1
+     },
+     "deal_size_median_mm": 187.3,
+     "deal_size_min_mm": 8.6,
+     "largest_closed_deal_mm": 994.1,
+     "first_year": 2015,
+     "last_year": 2024,
+     "deal_types": {
+      "Leveraged Buyout": 5,
+      "SPAC Merger": 3,
+      "Bolt-on Acquisition": 2,
+      "Strategic Acquisition": 2,
+      "Carve-out": 1,
+      "Minority Investment": 1,
+      "Recapitalization": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Diversification": 1.6,
+      "Cost Synergies": 1.3
+     },
+     "geographies": {
+      "Southeast": 6,
+      "West Coast": 2,
+      "National": 2,
+      "Midwest": 1,
+      "Mid-Atlantic": 1,
+      "Multi-Regional": 1,
+      "Southwest": 1,
+      "Great Plains": 1
+     },
+     "target_ownership": {
+      "Private": 7,
+      "Non-Profit": 4,
+      "Public": 3,
+      "PE-Backed": 1
+     },
+     "financing": {
+      "Leveraged": 4,
+      "Mixed": 4,
+      "Stock": 3
+     },
+     "median_target_margin_pct": 15.5,
+     "median_target_growth_pct": 11.4,
+     "median_days_to_close": 186.5,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 6,
+     "recent_in_band_closed": 2
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 60,
+     "buyer_size_iqr_mm": [
+      88.6,
+      437.2
+     ],
+     "largest_closed_deal_mm": 994.1,
+     "closed_deal_p90_mm": 818.2,
+     "capacity_basis": "closed deals",
+     "size_role": "platform",
+     "size_role_basis": "inside its interquartile range $88.6-437.2M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2024-0002",
+      "target": "Great Medical Associates",
+      "year": 2024,
+      "sector": "Physician Groups",
+      "geography": "Southeast",
+      "deal_size_mm": 298.6,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 13.3,
+      "ev_revenue": 1.38,
+      "ebitda_margin_pct": 15.1,
+      "revenue_growth_pct": 13.1,
+      "outcome": "Closed",
+      "target_ownership": "Public",
+      "financing": "Leveraged",
+      "num_bidders": 5,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "Diversification"
+      ],
+      "relevance": 0.48,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2023-0379",
+      "target": "Grand Medical Billing",
+      "year": 2023,
+      "sector": "Revenue Cycle",
+      "geography": "Southeast",
+      "deal_size_mm": 446.8,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 18.4,
+      "ev_revenue": 3.21,
+      "ebitda_margin_pct": 24.2,
+      "revenue_growth_pct": 21.2,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Mixed",
+      "num_bidders": 5,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Margin Improvement",
+       "Cross-sell"
+      ],
+      "relevance": 0.32,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2020-0286",
+      "target": "Maple Dental Care",
+      "year": 2020,
+      "sector": "Dental",
+      "geography": "Southeast",
+      "deal_size_mm": 427.6,
+      "deal_type": "Leveraged Buyout",
+      "ev_ebitda": 13.0,
+      "ev_revenue": 3.42,
+      "ebitda_margin_pct": 15.5,
+      "revenue_growth_pct": 8.2,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Vertical Integration"
+      ],
+      "relevance": 0.17,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2019-0271",
+      "target": "Harbor PACE",
+      "year": 2019,
+      "sector": "Home Health/Hospice",
+      "geography": "Midwest",
+      "deal_size_mm": 80.7,
+      "deal_type": "Strategic Acquisition",
+      "ev_ebitda": 16.1,
+      "ev_revenue": 2.02,
+      "ebitda_margin_pct": 14.7,
+      "revenue_growth_pct": 5.3,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.17,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0007",
+      "target": "United Health Data",
+      "year": 2022,
+      "sector": "Health IT",
+      "geography": "Mid-Atlantic",
+      "deal_size_mm": 169.0,
+      "deal_type": "SPAC Merger",
+      "ev_ebitda": 18.4,
+      "ev_revenue": 6.53,
+      "ebitda_margin_pct": 26.3,
+      "revenue_growth_pct": 26.2,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Leveraged",
+      "num_bidders": 2,
+      "tags": [
+       "Technology Capability",
+       "Geographic Expansion",
+       "High Growth",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.14,
+      "usable_as_comp": false
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 6,
+     "ev_ebitda_median": 15.8,
+     "ev_revenue_median": 2.62,
+     "ev_ebitda_p25": 13.8,
+     "ev_ebitda_p75": 16.3,
+     "ev_revenue_p25": 1.93,
+     "ev_revenue_p75": 3.37,
+     "transaction_ids": [
+      "MA-2024-0002",
+      "MA-2023-0379",
+      "MA-2020-0286",
+      "MA-2019-0271",
+      "MA-2019-0228",
+      "MA-2018-0034"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 15.8,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": 2.3,
+     "position": "above"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2015-0250",
+       "outcome": "Withdrawn",
+       "year": 2015,
+       "deal_size_mm": 199.3
+      },
+      {
+       "transaction_id": "MA-2020-0447",
+       "outcome": "Withdrawn",
+       "year": 2020,
+       "deal_size_mm": 187.3
+      },
+      {
+       "transaction_id": "MA-2022-0056",
+       "outcome": "Withdrawn",
+       "year": 2022,
+       "deal_size_mm": 27.2
+      }
+     ],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 0,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 5,
+     "largest_closed_deal_mm": 994.1,
+     "largest_withdrawn_or_pending_mm": 199.3,
+     "avg_bidders": 2.8,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 33.3
+    },
+    "score": {
+     "acquirer": "Hellman & Friedman",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.594,
+     "relevance_mass": 1.603,
+     "fit_quality": 0.102,
+     "best_match": 0.477,
+     "exec_penalty": 0.0,
+     "n_deals": 15,
+     "n_relevant": 4,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 15 deals in 2015-2024, 5 in the last 3 years; most deals in Physician Groups (3), Home Health/Hospice (3); size sweet spot $88.6-437.2M (IQR); most often buys from Private (7 of 15) sellers; most common financing Leveraged and Mixed (4 each of 15).",
+    "suggested_conviction": {
+     "level": "Medium",
+     "signals": [
+      "+2 6 closed adjacent-sector deals in the size band",
+      "+1 2 of those closed in the last 3 years"
+     ],
+     "points": 3.0
+    },
+    "closest_competitor": {
+     "acquirer": "Welsh Carson",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.4,
+     "this_vs_them": {
+      "deals": [
+       15,
+       23
+      ],
+      "deals_in_target_sector": [
+       0,
+       1
+      ],
+      "deals_last_3y": [
+       5,
+       8
+      ],
+      "deal_size_median_mm": [
+       187.3,
+       172.3
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Platform-sized fit: 6 closed adjacent deals in band, 5 deals in 3 years, but no Healthcare Services history.",
+    "acquirer_overview": "Hellman & Friedman is a financial sponsor with 15 deals in 2015-2024, 5 in the last 3 years, most in Physician Groups (3) and Home Health/Hospice (3). Its size sweet spot is $88.6-437.2M (IQR), it most often buys from Private sellers (7 of 15), and its most common financing is Leveraged and Mixed (4 each of 15). Its history shows a spread across provider and services niches rather than one sector, with 3 SPAC Merger labels in the mix.",
+    "strategic_fit_thesis": "The size role is platform, inside its interquartile range $88.6-437.2M, so Project Atlas at $200M would be a standalone platform rather than an add-on. Nearest adjacent evidence is physician and billing services: [MA-2024-0002] at $298.6M, 5 bidders, and [MA-2023-0379] at $446.8M in Revenue Cycle with a 24.2% margin, close to Atlas's 21.5%. Both are labelled Bolt-on Acquisition, a noisy label we treat only as a data point. Versus closest competitor Welsh Carson, H&F has fewer deals (15 vs 23) and fewer in the target sector (0 vs 1), and a similar median size ($187.3M vs $172.3M). Deployment pace is lower, 5 deals in the last 3 years vs 8. H&F's median size sits close to Atlas's $200M, but it has less pace and no sector history.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2024-0002",
+      "why_relevant": "Most recent and highest-relevance deal: $298.6M Physician Groups, Southeast, 13.3x EV/EBITDA, leveraged, usable as a control comp."
+     },
+     {
+      "transaction_id": "MA-2023-0379",
+      "why_relevant": "Revenue Cycle deal at $446.8M and 18.4x with a 24.2% margin, the closest margin match to Atlas; Private seller, 5 bidders."
+     },
+     {
+      "transaction_id": "MA-2020-0286",
+      "why_relevant": "Dental LBO at $427.6M, 13.0x, Private seller with stock financing and 2 bidders; shows a private-seller control deal in a services niche."
+     }
+    ],
+    "valuation_context": "On how it pays, H&F's closed adjacent control deals show a median 15.8x EV/EBITDA (n=6, interquartile 13.8x-16.3x), which is above its Financial Sponsor peers at 13.5x, a gap of 2.3 turns. Its precedents span 13.0x [MA-2020-0286] to 18.4x [MA-2023-0379], so a higher-margin target like Atlas could clear at the upper part of its own range. The 3 most relevant multiples are usable as control comps. The SPAC Merger [MA-2022-0007] is excluded as a comp.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "Three withdrawn deals: [MA-2015-0250] at $199.3M, [MA-2020-0447] at $187.3M and [MA-2022-0056] at $27.2M. The first two are almost exactly Atlas's size, so H&F has walked away from or lost deals at this scale."
+     },
+     {
+      "category": "other",
+      "detail": "Zero deals in Healthcare Services, the target sector, and only 2 relevant closed deals out of 15, so the sector-specific evidence is thin."
+     },
+     {
+      "category": "financing_capacity",
+      "detail": "33.3% of deals are leveraged or seller-financed, and 3 deals are stock-financed. A $200M platform sits well below its largest closed deal of $994.1M, so size is not the constraint."
+     },
+     {
+      "category": "competitive_process",
+      "detail": "Its precedents show up to 5 bidders [MA-2024-0002][MA-2023-0379] against an average of 2.8, so a contested process could test its above-peer pricing."
+     }
+    ],
+    "conviction": {
+     "level": "Medium",
+     "rationale": "Suggested Medium stands. Supports: 6 closed adjacent-sector deals in the size band, 2 in the last 3 years, and a platform size role. Against: 0 Healthcare Services deals and 3 withdrawn deals."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "ef954bb5837ded50e3dea5fdc5be9408bd61099a7d95953dcfd112306a57b1c2",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #5 on score (overall comparable-deal activity) with Medium conviction (direct evidence: 3 evidence pts; +2 6 closed adjacent-sector deals in the size band; +1 2 of those closed in the last 3 years): it outranks Welsh Carson (5 pts) on overall activity, but they have more direct evidence for this deal.",
+   "top_signals": [
+    "+2 6 closed adjacent-sector deals in the size band",
+    "+1 2 of those closed in the last 3 years"
+   ]
+  },
+  {
+   "rank": 6,
+   "candidate": {
+    "acquirer": "Warburg Pincus",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.536,
+    "relevance_mass": 1.71,
+    "fit_quality": 0.075,
+    "best_match": 0.367,
+    "exec_penalty": 0.0,
+    "n_deals": 23,
+    "n_relevant": 5,
+    "last_year": 2024,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Warburg Pincus",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 23,
+     "closed_deals": 16,
+     "deals_by_sector": {
+      "Home Health/Hospice": 5,
+      "Behavioral Health": 4,
+      "Dental": 3,
+      "Health IT": 3,
+      "Physician Groups": 3,
+      "Pharma/Biotech": 3,
+      "Revenue Cycle": 1,
+      "Health Insurance": 1
+     },
+     "deal_size_median_mm": 106.1,
+     "deal_size_min_mm": 11.4,
+     "largest_closed_deal_mm": 2124.3,
+     "first_year": 2016,
+     "last_year": 2024,
+     "deal_types": {
+      "Strategic Acquisition": 5,
+      "Platform Investment": 5,
+      "Recapitalization": 3,
+      "SPAC Merger": 3,
+      "Minority Investment": 2,
+      "Leveraged Buyout": 2,
+      "Merger of Equals": 2,
+      "Management Buyout": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Market Share": 1.6,
+      "Cost Synergies": 1.4,
+      "Technology Capability": 1.3,
+      "High Growth": 1.2
+     },
+     "geographies": {
+      "Northeast": 3,
+      "Mid-Atlantic": 3,
+      "National": 3,
+      "Multi-Regional": 3,
+      "Mountain West": 2,
+      "Great Plains": 2,
+      "Southeast": 2,
+      "Southwest": 2,
+      "Midwest": 2,
+      "West Coast": 1
+     },
+     "target_ownership": {
+      "PE-Backed": 7,
+      "Non-Profit": 7,
+      "Private": 6,
+      "Public": 3
+     },
+     "financing": {
+      "Seller Financing": 5,
+      "Stock": 5,
+      "Earnout": 3
+     },
+     "median_target_margin_pct": 15.1,
+     "median_target_growth_pct": 13.6,
+     "median_days_to_close": 240.5,
+     "relevant_closed_deals": 2,
+     "closed_in_size_band": 3,
+     "recent_in_band_closed": 2
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 65,
+     "buyer_size_iqr_mm": [
+      21.5,
+      293.4
+     ],
+     "largest_closed_deal_mm": 2124.3,
+     "closed_deal_p90_mm": 878.7,
+     "capacity_basis": "closed deals",
+     "platform_deals": {
+      "n": 5,
+      "median_mm": 102.3
+     },
+     "size_role": "platform",
+     "size_role_basis": "vs its 5 Platform Investment deals (median $102.3M)"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2024-0186",
+      "target": "Victory Dental Group",
+      "year": 2024,
+      "sector": "Dental",
+      "geography": "Northeast",
+      "deal_size_mm": 361.9,
+      "deal_type": "Strategic Acquisition",
+      "ev_ebitda": 12.3,
+      "ev_revenue": 2.77,
+      "ebitda_margin_pct": 14.5,
+      "revenue_growth_pct": 5.9,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "Earnout",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.37,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2023-0481",
+      "target": "Apex EHR Solutions",
+      "year": 2023,
+      "sector": "Health IT",
+      "geography": "Mountain West",
+      "deal_size_mm": 185.7,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 25.7,
+      "ev_revenue": 5.65,
+      "ebitda_margin_pct": 18.1,
+      "revenue_growth_pct": 22.4,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Seller Financing",
+      "num_bidders": 2,
+      "tags": [
+       "Technology Capability",
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Market Share"
+      ],
+      "relevance": 0.3,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0252",
+      "target": "Universal Health AI",
+      "year": 2022,
+      "sector": "Health IT",
+      "geography": "Mid-Atlantic",
+      "deal_size_mm": 219.2,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 23.3,
+      "ev_revenue": 5.85,
+      "ebitda_margin_pct": 21.5,
+      "revenue_growth_pct": 19.6,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Earnout",
+      "num_bidders": 5,
+      "tags": [
+       "Technology Capability",
+       "Geographic Expansion",
+       "High Growth",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0450",
+      "target": "Bridge DSO",
+      "year": 2022,
+      "sector": "Dental",
+      "geography": "Mid-Atlantic",
+      "deal_size_mm": 106.1,
+      "deal_type": "Minority Investment",
+      "ev_ebitda": 10.0,
+      "ev_revenue": 1.82,
+      "ebitda_margin_pct": 18.0,
+      "revenue_growth_pct": 11.8,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Mixed",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Cost Synergies"
+      ],
+      "relevance": 0.18,
+      "usable_as_comp": false
+     },
+     {
+      "transaction_id": "MA-2021-0441",
+      "target": "Keystone EHR Solutions",
+      "year": 2021,
+      "sector": "Health IT",
+      "geography": "Great Plains",
+      "deal_size_mm": 382.2,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 19.4,
+      "ev_revenue": 5.42,
+      "ebitda_margin_pct": 22.2,
+      "revenue_growth_pct": 19.3,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 3,
+      "tags": [
+       "Technology Capability",
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Margin Improvement",
+       "Market Share"
+      ],
+      "relevance": 0.16,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 2,
+     "ev_ebitda_median": 13.4,
+     "ev_revenue_median": 2.04,
+     "transaction_ids": [
+      "MA-2024-0186",
+      "MA-2017-0359"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 13.4,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": -0.1,
+     "position": "in line with"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2023-0191",
+       "outcome": "Withdrawn",
+       "year": 2023,
+       "deal_size_mm": 111.3
+      },
+      {
+       "transaction_id": "MA-2019-0340",
+       "outcome": "Terminated",
+       "year": 2019,
+       "deal_size_mm": 102.3
+      },
+      {
+       "transaction_id": "MA-2020-0201",
+       "outcome": "Withdrawn",
+       "year": 2020,
+       "deal_size_mm": 79.3
+      },
+      {
+       "transaction_id": "MA-2018-0413",
+       "outcome": "Withdrawn",
+       "year": 2018,
+       "deal_size_mm": 432.3
+      },
+      {
+       "transaction_id": "MA-2016-0495",
+       "outcome": "Withdrawn",
+       "year": 2016,
+       "deal_size_mm": 30.9
+      },
+      {
+       "transaction_id": "MA-2021-0371",
+       "outcome": "Terminated",
+       "year": 2021,
+       "deal_size_mm": 18.3
+      }
+     ],
+     "stale_pending_or_rumored": [
+      "MA-2019-0204"
+     ],
+     "deals_in_target_sector": 0,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 7,
+     "largest_closed_deal_mm": 2124.3,
+     "largest_withdrawn_or_pending_mm": 432.3,
+     "avg_bidders": 2.8,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 34.8
+    },
+    "score": {
+     "acquirer": "Warburg Pincus",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.536,
+     "relevance_mass": 1.71,
+     "fit_quality": 0.075,
+     "best_match": 0.367,
+     "exec_penalty": 0.0,
+     "n_deals": 23,
+     "n_relevant": 5,
+     "last_year": 2024,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 23 deals in 2016-2024, 7 in the last 3 years; most deals in Home Health/Hospice (5), Behavioral Health (4); size sweet spot $21.5-293.4M (IQR); most often buys from PE-Backed and Non-Profit (7 each of 23) sellers; most common financing Seller Financing and Stock (5 each of 23).",
+    "suggested_conviction": {
+     "level": "Low",
+     "signals": [
+      "+1 3 closed adjacent-sector deals in the size band",
+      "+1 2 of those closed in the last 3 years",
+      "+1 median 13.4x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "-1 6 of 23 deals withdrawn/terminated"
+     ],
+     "points": 2.0
+    },
+    "closest_competitor": {
+     "acquirer": "New Mountain Capital",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.32,
+     "this_vs_them": {
+      "deals": [
+       23,
+       21
+      ],
+      "closed_in_size_band": [
+       3,
+       7
+      ],
+      "deals_in_target_sector": [
+       0,
+       1
+      ],
+      "deals_last_3y": [
+       7,
+       5
+      ],
+      "deal_size_median_mm": [
+       106.1,
+       121.9
+      ],
+      "pricing_position": [
+       "in line with",
+       "below"
+      ],
+      "withdrawn_or_terminated": [
+       6,
+       4
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Warburg Pincus has closed 3 deals in the $200M band, but none of its 23 deals sit in Healthcare Services.",
+    "acquirer_overview": "Warburg Pincus is a financial sponsor with 23 deals in 2016-2024, 7 of them in the last 3 years. Its most frequent sectors are Home Health/Hospice (5) and Behavioral Health (4), with a size sweet spot of $21.5-293.4M (IQR). It most often buys from PE-Backed and Non-Profit sellers (7 each of 23), and Seller Financing and Stock are its most common financing (5 each). Its history shows a spread across adjacent services and health IT rather than a single-sector focus.",
+    "strategic_fit_thesis": "Project Atlas at $200M would be a platform for Warburg Pincus, measured against its 5 Platform Investment deals (median $102.3M) such as [MA-2023-0481] and [MA-2021-0441]. Deployment is active: 7 deals in the last 3 years, and 2 closed in the size band within that window, including [MA-2024-0186]. Against closest competitor New Mountain Capital, the difference is size-band depth: Warburg Pincus has 3 closed deals in the band versus 7 for New Mountain, and 0 deals in the target sector versus 1. Deal-type labels are noisy (Strategic Acquisition, Recapitalization, SPAC Merger), so the thesis rests on sizes and sectors rather than any single label. The Health IT precedents carried higher margins, such as 21.5% in [MA-2022-0252], which resembles the target's profile, but the sector is different.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2024-0186",
+      "why_relevant": "Most relevant closed control deal: Dental, $361.9M, 12.3x EV/EBITDA, earnout financing, 2 bidders, from 2024, which shows recent adjacent-sector activity."
+     },
+     {
+      "transaction_id": "MA-2023-0481",
+      "why_relevant": "Platform Investment in Health IT at $185.7M, close to the target's $200M, closed in 2023 with seller financing at 25.7x, so it shows platform logic but at a technology multiple."
+     },
+     {
+      "transaction_id": "MA-2022-0252",
+      "why_relevant": "Health IT deal at $219.2M with a 21.5% EBITDA margin, matching the target margin, but 23.3x with 5 bidders points to a different sector's pricing."
+     },
+     {
+      "transaction_id": "MA-2021-0441",
+      "why_relevant": "Platform Investment at $382.2M, 22.2% margin, closed all cash in 2021; shows it can fund platforms above the target size."
+     }
+    ],
+    "valuation_context": "On its own closed control comps (2 deals, adjacent sectors, similar size, including [MA-2024-0186]), Warburg Pincus has a median of 13.4x EV/EBITDA and 2.04x EV/revenue. Against Financial Sponsor peers at 13.5x, its pricing is in line with its peers (-0.1 turns). Its higher multiples of 19.4x to 25.7x came on Health IT platforms [MA-2021-0441][MA-2023-0481], not on services. [MA-2022-0450] is a minority deal and is not usable as a comp.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "6 of 23 deals were withdrawn or terminated, including [MA-2023-0191] in 2023 and [MA-2018-0413] at $432.3M, and [MA-2019-0204] is stale, pending or rumored; this is more than New Mountain's 4."
+     },
+     {
+      "category": "other",
+      "detail": "Zero of its 23 deals are in Healthcare Services, so the target sector would be new ground, and only 2 relevant closed deals support the comps."
+     },
+     {
+      "category": "financing_capacity",
+      "detail": "34.8% of its deals are leveraged or seller-financed, so the structure for a $200M platform may depend on seller paper; its largest closed deal of $2124.3M shows it can fund the size."
+     }
+    ],
+    "conviction": {
+     "level": "Low",
+     "rationale": "The suggested Low stands: 3 closed band deals and pricing in line with peers are offset by 6 of 23 withdrawn or terminated deals and 0 deals in Healthcare Services."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "95869b190774b79fbc6280ab0b390824169b37fb01c7a5898dc23499b1fcc7bd",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #6 on score (overall comparable-deal activity) with Low conviction (direct evidence: 2 evidence pts; +1 3 closed adjacent-sector deals in the size band; +1 2 of those closed in the last 3 years): it outranks Aspen Dental (ADMI) (3.5 pts), Welsh Carson (5 pts) on overall activity, but they have more direct evidence for this deal.",
+   "top_signals": [
+    "+1 3 closed adjacent-sector deals in the size band",
+    "+1 2 of those closed in the last 3 years"
+   ]
+  },
+  {
+   "rank": 7,
+   "candidate": {
+    "acquirer": "Aspen Dental (ADMI)",
+    "acquirer_type": "Strategic",
+    "score": 0.523,
+    "relevance_mass": 0.753,
+    "fit_quality": 0.164,
+    "best_match": 0.35,
+    "exec_penalty": 0.0,
+    "n_deals": 3,
+    "n_relevant": 3,
+    "last_year": 2022,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Aspen Dental (ADMI)",
+    "acquirer_type": "Strategic",
+    "profile": {
+     "total_deals": 3,
+     "closed_deals": 3,
+     "deals_by_sector": {
+      "Dental": 3
+     },
+     "deal_size_median_mm": 176.3,
+     "deal_size_min_mm": 168.1,
+     "largest_closed_deal_mm": 391.6,
+     "first_year": 2020,
+     "last_year": 2022,
+     "deal_types": {
+      "Bolt-on Acquisition": 1,
+      "Platform Investment": 1,
+      "Management Buyout": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Platform Build": 2.8,
+      "High Growth": 1.6,
+      "Cost Synergies": 1.6,
+      "Cross-sell": 1.6
+     },
+     "geographies": {
+      "National": 1,
+      "Southeast": 1,
+      "West Coast": 1
+     },
+     "target_ownership": {
+      "Non-Profit": 2,
+      "Private": 1
+     },
+     "financing": {
+      "Cash + Stock": 2,
+      "Seller Financing": 1
+     },
+     "median_target_margin_pct": 15.5,
+     "median_target_growth_pct": 16.2,
+     "median_days_to_close": 339.0,
+     "relevant_closed_deals": 1,
+     "closed_in_size_band": 3,
+     "recent_in_band_closed": 1
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 67,
+     "buyer_size_iqr_mm": [
+      172.2,
+      284.0
+     ],
+     "largest_closed_deal_mm": 391.6,
+     "closed_deal_p90_mm": 348.5,
+     "capacity_basis": "closed deals",
+     "size_role": "core-sized",
+     "size_role_basis": "inside its interquartile range $172.2-284.0M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2022-0229",
+      "target": "Quality Orthodontics",
+      "year": 2022,
+      "sector": "Dental",
+      "geography": "National",
+      "deal_size_mm": 176.3,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 12.4,
+      "ev_revenue": 2.27,
+      "ebitda_margin_pct": 14.7,
+      "revenue_growth_pct": 17.4,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Cash + Stock",
+      "num_bidders": 4,
+      "tags": [
+       "Platform Build",
+       "High Growth",
+       "Cost Synergies"
+      ],
+      "relevance": 0.35,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2020-0159",
+      "target": "Strategic Oral Health",
+      "year": 2020,
+      "sector": "Dental",
+      "geography": "Southeast",
+      "deal_size_mm": 391.6,
+      "deal_type": "Platform Investment",
+      "ev_ebitda": 17.0,
+      "ev_revenue": 1.82,
+      "ebitda_margin_pct": 21.2,
+      "revenue_growth_pct": 16.2,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Cash + Stock",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "High Growth",
+       "Margin Improvement",
+       "Cross-sell"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2020-0247",
+      "target": "Pacific Oral Health",
+      "year": 2020,
+      "sector": "Dental",
+      "geography": "West Coast",
+      "deal_size_mm": 168.1,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 13.2,
+      "ev_revenue": 1.97,
+      "ebitda_margin_pct": 15.5,
+      "revenue_growth_pct": 6.8,
+      "outcome": "Closed",
+      "target_ownership": "Non-Profit",
+      "financing": "Seller Financing",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Diversification"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 3,
+     "ev_ebitda_median": 13.2,
+     "ev_revenue_median": 1.97,
+     "ev_ebitda_p25": 12.8,
+     "ev_ebitda_p75": 15.1,
+     "ev_revenue_p25": 1.9,
+     "ev_revenue_p75": 2.12,
+     "transaction_ids": [
+      "MA-2022-0229",
+      "MA-2020-0159",
+      "MA-2020-0247"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Strategic peers, same filters, any margin: median 14.2x (n=30)",
+     "acquirer_median": 13.2,
+     "peer_median": 14.2,
+     "ev_ebitda_gap_turns": -1.0,
+     "position": "in line with"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 0,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 1,
+     "largest_closed_deal_mm": 391.6,
+     "largest_withdrawn_or_pending_mm": null,
+     "avg_bidders": 2.7,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 33.3
+    },
+    "score": {
+     "acquirer": "Aspen Dental (ADMI)",
+     "acquirer_type": "Strategic",
+     "score": 0.523,
+     "relevance_mass": 0.753,
+     "fit_quality": 0.164,
+     "best_match": 0.35,
+     "exec_penalty": 0.0,
+     "n_deals": 3,
+     "n_relevant": 3,
+     "last_year": 2022,
+     "mix_fill": false
+    },
+    "descriptor": "Strategic acquirer: 3 deals in 2020-2022, 1 in the last 3 years; most deals in Dental (3); size sweet spot $172.2-284.0M (IQR); most often buys from Non-Profit (2 of 3) sellers; most common financing Cash + Stock (2 of 3).",
+    "suggested_conviction": {
+     "level": "Medium",
+     "signals": [
+      "+1 3 closed adjacent-sector deals in the size band",
+      "+0.5 1 of those closed in the last 3 years",
+      "+1 median 13.2x sits inside Strategic peer IQR 11.7-16.8x",
+      "+1 no withdrawn/terminated deals"
+     ],
+     "points": 3.5
+    },
+    "closest_competitor": {
+     "acquirer": "Hellman & Friedman",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.71,
+     "this_vs_them": {
+      "deals": [
+       3,
+       15
+      ],
+      "closed_in_size_band": [
+       3,
+       6
+      ],
+      "deals_last_3y": [
+       1,
+       5
+      ],
+      "deal_size_median_mm": [
+       176.3,
+       187.3
+      ],
+      "size_role": [
+       "core-sized",
+       "platform"
+      ],
+      "pricing_position": [
+       "in line with",
+       "above"
+      ],
+      "withdrawn_or_terminated": [
+       0,
+       3
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "All 3 Aspen deals are Dental, closed, and sized $168.1-391.6M, so Atlas is core-sized but outside its sector.",
+    "acquirer_overview": "Strategic acquirer with 3 deals in 2020-2022, 1 in the last 3 years; all 3 in Dental; size sweet spot $172.2-284.0M (IQR); most often buys from Non-Profit sellers (2 of 3); most common financing is Cash + Stock (2 of 3). Its deal history shows a single-sector focus on building dental platforms, with Platform Build the most distinctive tag at 2.8x market lift.",
+    "strategic_fit_thesis": "Atlas at $200.0M is core-sized for Aspen, inside its interquartile range $172.2-284.0M, and sits at the 67th percentile of its closed-deal sizes. All 3 closed deals fall in the size band [MA-2022-0229][MA-2020-0159][MA-2020-0247]. Footprint is mixed: National, Southeast and West Coast, so a regional target fits no pattern. Vertical integration is not visible; all deals are Dental, so Atlas would be a diversification step, and cross-sell appears only on [MA-2020-0159]. Versus closest competitor Hellman & Friedman, Aspen has 1 deal in the last 3 years against 5, and 3 deals against 15, so it is a far less active buyer. Aspen shows no withdrawn deals against 3 for H&F. Financing: 2 deals Cash + Stock, and 1 seller-financed, which indicates moderate capacity for $200M.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2022-0229",
+      "why_relevant": "Most recent and most relevant deal: $176.3M Dental bolt-on at 12.4x EV/EBITDA, Cash + Stock, 4 bidders, usable as comp."
+     },
+     {
+      "transaction_id": "MA-2020-0159",
+      "why_relevant": "Largest closed deal at $391.6M, 17.0x EV/EBITDA and 21.2% margin, close to Atlas's margin profile; usable as comp."
+     },
+     {
+      "transaction_id": "MA-2020-0247",
+      "why_relevant": "$168.1M West Coast deal at 13.2x with seller financing, the closest size to Atlas on the low side; usable as comp."
+     }
+    ],
+    "valuation_context": "Aspen's median of 13.2x EV/EBITDA across its 3 comps (range 12.4x-17.0x) is in line with its Strategic peers (median 14.2x, gap -1.0 turns). Its highest multiple, 17.0x, was paid on the 21.2% margin deal [MA-2020-0159], while the 14.7% and 15.5% margin deals cleared at 12.4x and 13.2x. Atlas's 21.5% margin would sit nearer the top deal, implying a higher price than Aspen's median.",
+    "risk_flags": [
+     {
+      "category": "integration",
+      "detail": "Aspen has 0 deals in Healthcare Services; all 3 are Dental, so Atlas is outside demonstrated sector experience."
+     },
+     {
+      "category": "execution",
+      "detail": "Only 1 deal in the last 3 years [MA-2022-0229], and the last deal year is 2022, so deployment pace is thin; evidence rests on 3 deals."
+     },
+     {
+      "category": "financing_capacity",
+      "detail": "Largest closed deal is $391.6M [MA-2020-0159] but 33.3% of its financing was seller-financed [MA-2020-0247], so cash capacity for $200M is untested beyond Cash + Stock."
+     }
+    ],
+    "conviction": {
+     "level": "Medium",
+     "rationale": "Starting at Medium: 3 of 3 closed deals sit in the size band and no withdrawn deals, but only 1 deal in the last 3 years and 0 in Healthcare Services keep it from High."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "fd058c01bc3be59a57ee736883d757ff7b191f5e4d78d3b052dc9b6f6fa150d1",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #7 on score (overall comparable-deal activity) with Medium conviction (direct evidence: 3.5 evidence pts; +1 3 closed adjacent-sector deals in the size band; +1 median 13.2x sits inside Strategic peer IQR 11.7-16.8x): it outranks Welsh Carson (5 pts) on overall activity, but they have more direct evidence for this deal.",
+   "top_signals": [
+    "+1 3 closed adjacent-sector deals in the size band",
+    "+1 median 13.2x sits inside Strategic peer IQR 11.7-16.8x"
+   ]
+  },
+  {
+   "rank": 8,
+   "candidate": {
+    "acquirer": "Welsh Carson",
+    "acquirer_type": "Financial Sponsor",
+    "score": 0.497,
+    "relevance_mass": 1.684,
+    "fit_quality": 0.074,
+    "best_match": 0.238,
+    "exec_penalty": 0.0,
+    "n_deals": 23,
+    "n_relevant": 5,
+    "last_year": 2023,
+    "mix_fill": false
+   },
+   "evidence": {
+    "acquirer": "Welsh Carson",
+    "acquirer_type": "Financial Sponsor",
+    "profile": {
+     "total_deals": 23,
+     "closed_deals": 18,
+     "deals_by_sector": {
+      "Behavioral Health": 5,
+      "Physician Groups": 5,
+      "Medical Devices": 4,
+      "Home Health/Hospice": 3,
+      "Dental": 2,
+      "Revenue Cycle": 1,
+      "Healthcare Services": 1,
+      "Health IT": 1,
+      "Pharma/Biotech": 1
+     },
+     "deal_size_median_mm": 172.3,
+     "deal_size_min_mm": 6.5,
+     "largest_closed_deal_mm": 4212.4,
+     "first_year": 2017,
+     "last_year": 2023,
+     "deal_types": {
+      "Management Buyout": 7,
+      "Recapitalization": 5,
+      "Strategic Acquisition": 2,
+      "Leveraged Buyout": 2,
+      "SPAC Merger": 2,
+      "Minority Investment": 2,
+      "Merger of Equals": 1,
+      "Bolt-on Acquisition": 1,
+      "Carve-out": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Cross-sell": 1.7,
+      "Cost Synergies": 1.2
+     },
+     "geographies": {
+      "Midwest": 6,
+      "Southwest": 4,
+      "Southeast": 3,
+      "West Coast": 2,
+      "Mid-Atlantic": 2,
+      "Mountain West": 2,
+      "National": 2,
+      "Great Plains": 1,
+      "Multi-Regional": 1
+     },
+     "target_ownership": {
+      "Private": 12,
+      "PE-Backed": 8,
+      "Non-Profit": 2,
+      "Public": 1
+     },
+     "financing": {
+      "Mixed": 5,
+      "Cash + Stock": 4,
+      "Leveraged": 4
+     },
+     "median_target_margin_pct": 15.3,
+     "median_target_growth_pct": 13.0,
+     "median_days_to_close": 233.5,
+     "relevant_closed_deals": 0,
+     "closed_in_size_band": 6,
+     "recent_in_band_closed": 2
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 57,
+     "buyer_size_iqr_mm": [
+      60.2,
+      451.2
+     ],
+     "largest_closed_deal_mm": 4212.4,
+     "closed_deal_p90_mm": 2308.6,
+     "capacity_basis": "closed deals",
+     "size_role": "platform",
+     "size_role_basis": "inside its interquartile range $60.2-451.2M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2022-0299",
+      "target": "Vantage RCM",
+      "year": 2022,
+      "sector": "Revenue Cycle",
+      "geography": "West Coast",
+      "deal_size_mm": 192.9,
+      "deal_type": "Merger of Equals",
+      "ev_ebitda": 21.6,
+      "ev_revenue": 3.86,
+      "ebitda_margin_pct": 23.7,
+      "revenue_growth_pct": 12.9,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Mixed",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Margin Improvement",
+       "Cost Synergies"
+      ],
+      "relevance": 0.24,
+      "usable_as_comp": false
+     },
+     {
+      "transaction_id": "MA-2020-0094",
+      "target": "Liberty Behavioral Services",
+      "year": 2020,
+      "sector": "Behavioral Health",
+      "geography": "Midwest",
+      "deal_size_mm": 393.8,
+      "deal_type": "Strategic Acquisition",
+      "ev_ebitda": 14.8,
+      "ev_revenue": 1.7,
+      "ebitda_margin_pct": 14.1,
+      "revenue_growth_pct": 15.9,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "Earnout",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Vertical Integration"
+      ],
+      "relevance": 0.2,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0083",
+      "target": "Jefferson Ambulatory Care",
+      "year": 2021,
+      "sector": "Healthcare Services",
+      "geography": "Midwest",
+      "deal_size_mm": 75.3,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 17.8,
+      "ev_revenue": 3.4,
+      "ebitda_margin_pct": 10.3,
+      "revenue_growth_pct": 14.7,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Cross-sell"
+      ],
+      "relevance": 0.17,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2021-0025",
+      "target": "Woodland PACE",
+      "year": 2021,
+      "sector": "Home Health/Hospice",
+      "geography": "Great Plains",
+      "deal_size_mm": 203.8,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 17.6,
+      "ev_revenue": 2.78,
+      "ebitda_margin_pct": 8.5,
+      "revenue_growth_pct": 6.9,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "Cash + Stock",
+      "num_bidders": 5,
+      "tags": [
+       "Geographic Expansion",
+       "Market Share"
+      ],
+      "relevance": 0.17,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2019-0287",
+      "target": "Keystone Behavioral Services",
+      "year": 2019,
+      "sector": "Behavioral Health",
+      "geography": "Midwest",
+      "deal_size_mm": 126.9,
+      "deal_type": "Management Buyout",
+      "ev_ebitda": 15.1,
+      "ev_revenue": 2.37,
+      "ebitda_margin_pct": 13.9,
+      "revenue_growth_pct": 21.2,
+      "outcome": "Closed",
+      "target_ownership": "PE-Backed",
+      "financing": "Leveraged",
+      "num_bidders": 3,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Diversification"
+      ],
+      "relevance": 0.16,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 4,
+     "ev_ebitda_median": 14.9,
+     "ev_revenue_median": 2.15,
+     "ev_ebitda_p25": 13.7,
+     "ev_ebitda_p75": 15.7,
+     "ev_revenue_p25": 1.86,
+     "ev_revenue_p75": 2.47,
+     "transaction_ids": [
+      "MA-2020-0094",
+      "MA-2021-0025",
+      "MA-2019-0287",
+      "MA-2017-0146"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Financial Sponsor peers, same filters, any margin: median 13.5x (n=54)",
+     "acquirer_median": 14.9,
+     "peer_median": 13.5,
+     "ev_ebitda_gap_turns": 1.4,
+     "position": "above"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [
+      {
+       "transaction_id": "MA-2023-0166",
+       "outcome": "Withdrawn",
+       "year": 2023,
+       "deal_size_mm": 398.2
+      },
+      {
+       "transaction_id": "MA-2020-0070",
+       "outcome": "Withdrawn",
+       "year": 2020,
+       "deal_size_mm": 504.2
+      },
+      {
+       "transaction_id": "MA-2022-0024",
+       "outcome": "Withdrawn",
+       "year": 2022,
+       "deal_size_mm": 38.0
+      }
+     ],
+     "stale_pending_or_rumored": [
+      "MA-2019-0376"
+     ],
+     "deals_in_target_sector": 1,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 8,
+     "largest_closed_deal_mm": 4212.4,
+     "largest_withdrawn_or_pending_mm": 504.2,
+     "avg_bidders": 2.7,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 30.4
+    },
+    "score": {
+     "acquirer": "Welsh Carson",
+     "acquirer_type": "Financial Sponsor",
+     "score": 0.497,
+     "relevance_mass": 1.684,
+     "fit_quality": 0.074,
+     "best_match": 0.238,
+     "exec_penalty": 0.0,
+     "n_deals": 23,
+     "n_relevant": 5,
+     "last_year": 2023,
+     "mix_fill": false
+    },
+    "descriptor": "Financial sponsor: 23 deals in 2017-2023, 8 in the last 3 years; most deals in Behavioral Health (5), Physician Groups (5); size sweet spot $60.2-451.2M (IQR); most often buys from Private (12 of 23) sellers; most common financing Mixed (5 of 23).",
+    "suggested_conviction": {
+     "level": "High",
+     "signals": [
+      "+2 6 closed adjacent-sector deals in the size band",
+      "+1 2 of those closed in the last 3 years",
+      "+1 median 14.9x sits inside Financial Sponsor peer IQR 11.5-15.6x",
+      "+1 1 prior Healthcare Services deal(s)"
+     ],
+     "points": 5.0
+    },
+    "closest_competitor": {
+     "acquirer": "Hellman & Friedman",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.4,
+     "this_vs_them": {
+      "deals": [
+       23,
+       15
+      ],
+      "deals_in_target_sector": [
+       1,
+       0
+      ],
+      "deals_last_3y": [
+       8,
+       5
+      ],
+      "deal_size_median_mm": [
+       172.3,
+       187.3
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Welsh Carson has 8 deals in 3 years and 6 closed in the size band, with the target landing inside its interquartile range.",
+    "acquirer_overview": "Welsh Carson is a financial sponsor with 23 deals in 2017-2023, 8 in the last 3 years. Most deals are in Behavioral Health (5) and Physician Groups (5), with a size sweet spot of $60.2-451.2M (IQR). It most often buys from Private sellers (12 of 23), and its most common financing is Mixed (5 of 23). Its history is dominated by Management Buyouts (7) and Recapitalizations (5), with Midwest the largest region (6 deals).",
+    "strategic_fit_thesis": "The size role is platform: a $200M target sits inside its interquartile range of $60.2-451.2M, at the 57th percentile of its closed-deal history, and 6 closed deals fall in the size band. Only 1 of its 23 deals is in Healthcare Services, [MA-2021-0083] at $75.3M, so this would be an adjacent-sector entry rather than a repeat. Its closest competitor is Hellman & Friedman. The difference: Welsh Carson has 8 deals in the last 3 years versus 5 for Hellman & Friedman, and 1 deal in the target sector versus 0, at similar median sizes of $172.3M and $187.3M. Deployment is steady, with its Management Buyout labelled deals including [MA-2021-0025] and [MA-2019-0287] at $203.8M and $126.9M. Deal type labels are noisy, so this rests on size and recency, not on a single tag.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2021-0083",
+      "why_relevant": "Only prior Healthcare Services deal: $75.3M Midwest Management Buyout at 17.8x EV/EBITDA from a Private seller, though its 10.3% margin is well below the target's 21.5%."
+     },
+     {
+      "transaction_id": "MA-2021-0025",
+      "why_relevant": "$203.8M Management Buyout, almost the same size as the target, at 17.6x with 5 bidders; usable as a comp."
+     },
+     {
+      "transaction_id": "MA-2019-0287",
+      "why_relevant": "$126.9M Behavioral Health buyout at 15.1x, financed with leverage; shows the sponsor's mid-size pattern."
+     },
+     {
+      "transaction_id": "MA-2022-0299",
+      "why_relevant": "$192.9M Revenue Cycle deal with a 23.7% margin, the closest on size and margin, but a Merger of Equals so not usable as a control comp."
+     }
+    ],
+    "valuation_context": "Across 4 comparable closed control deals, Welsh Carson's median is 14.9x EV/EBITDA (IQR 13.7-15.7x) and 2.15x EV/revenue [MA-2020-0094][MA-2021-0025][MA-2019-0287]. Against Financial Sponsor peers at 13.5x (n=54), it pays above its peers, by 1.4 turns. Its pricing is therefore likely to be competitive for a high-margin asset, though its own comps carry margins of 8.5-14.1%, below the target's 21.5%.",
+    "risk_flags": [
+     {
+      "category": "execution",
+      "detail": "3 withdrawn deals: [MA-2023-0166] ($398.2M, 2023), [MA-2020-0070] ($504.2M) and [MA-2022-0024] ($38.0M), plus stale [MA-2019-0376]. The most recent withdrawal was in 2023, its last active year."
+     },
+     {
+      "category": "valuation",
+      "detail": "It pays 1.4 turns above Financial Sponsor peers (14.9x vs 13.5x), which could limit headroom if the seller runs a price-led process."
+     },
+     {
+      "category": "other",
+      "detail": "Thin sector evidence: only 1 prior Healthcare Services deal [MA-2021-0083] at 10.3% margin, and no relevant closed deals counted."
+     },
+     {
+      "category": "financing_capacity",
+      "detail": "Leveraged or seller-financed deals are 30.4% of its book, and Mixed financing is the most common structure."
+     }
+    ],
+    "conviction": {
+     "level": "High",
+     "rationale": "Keeping High: 6 closed deals sit in the size band, 2 of them in the last 3 years, and the 14.9x median is within the sponsor IQR. Offsetting this, 3 withdrawn deals and only 1 sector precedent."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "14deb05a96993b01e7e59e643e3e19402a6c701694dc0677dbf299baf786158f",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": "Ranked #8 on score (overall comparable-deal activity) with High conviction (direct evidence: 5 evidence pts; +2 6 closed adjacent-sector deals in the size band; +1 2 of those closed in the last 3 years): Blackstone (4.5 pts), Hellman & Friedman (3 pts), Warburg Pincus (2 pts), Aspen Dental (ADMI) (3.5 pts) rank higher on overall activity but have less direct evidence for this deal.",
+   "top_signals": [
+    "+2 6 closed adjacent-sector deals in the size band",
+    "+1 2 of those closed in the last 3 years"
+   ]
+  },
+  {
+   "rank": 9,
+   "candidate": {
+    "acquirer": "Advocate Health",
+    "acquirer_type": "Strategic",
+    "score": 0.438,
+    "relevance_mass": 0.48,
+    "fit_quality": 0.142,
+    "best_match": 0.368,
+    "exec_penalty": 0.0,
+    "n_deals": 2,
+    "n_relevant": 1,
+    "last_year": 2022,
+    "mix_fill": true
+   },
+   "evidence": {
+    "acquirer": "Advocate Health",
+    "acquirer_type": "Strategic",
+    "profile": {
+     "total_deals": 2,
+     "closed_deals": 2,
+     "deals_by_sector": {
+      "Healthcare Services": 2
+     },
+     "deal_size_median_mm": 235.8,
+     "deal_size_min_mm": 35.3,
+     "largest_closed_deal_mm": 436.2,
+     "first_year": 2020,
+     "last_year": 2022,
+     "deal_types": {
+      "Strategic Acquisition": 1,
+      "Leveraged Buyout": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Diversification": 4.7,
+      "High Growth": 1.2
+     },
+     "geographies": {
+      "Northeast": 1,
+      "Southwest": 1
+     },
+     "target_ownership": {
+      "Private": 2
+     },
+     "financing": {
+      "Stock": 2
+     },
+     "median_target_margin_pct": 17.9,
+     "median_target_growth_pct": 11.4,
+     "median_days_to_close": 139.5,
+     "relevant_closed_deals": 1,
+     "closed_in_size_band": 1,
+     "recent_in_band_closed": 0
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 50,
+     "buyer_size_iqr_mm": [
+      135.5,
+      336.0
+     ],
+     "largest_closed_deal_mm": 436.2,
+     "closed_deal_p90_mm": 396.1,
+     "capacity_basis": "closed deals",
+     "size_role": "core-sized",
+     "size_role_basis": "inside its interquartile range $135.5-336.0M"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2020-0496",
+      "target": "Hudson Medical Group",
+      "year": 2020,
+      "sector": "Healthcare Services",
+      "geography": "Northeast",
+      "deal_size_mm": 436.2,
+      "deal_type": "Strategic Acquisition",
+      "ev_ebitda": 9.3,
+      "ev_revenue": 2.04,
+      "ebitda_margin_pct": 17.5,
+      "revenue_growth_pct": 17.7,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 5,
+      "tags": [
+       "Geographic Expansion",
+       "High Growth",
+       "Diversification"
+      ],
+      "relevance": 0.37,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0311",
+      "target": "Silver Health Partners",
+      "year": 2022,
+      "sector": "Healthcare Services",
+      "geography": "Southwest",
+      "deal_size_mm": 35.3,
+      "deal_type": "Leveraged Buyout",
+      "ev_ebitda": 13.8,
+      "ev_revenue": 1.69,
+      "ebitda_margin_pct": 18.4,
+      "revenue_growth_pct": 5.2,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Stock",
+      "num_bidders": 4,
+      "tags": [
+       "Geographic Expansion",
+       "Diversification"
+      ],
+      "relevance": 0.11,
+      "usable_as_comp": true
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 1,
+     "ev_ebitda_median": 9.3,
+     "ev_revenue_median": 2.04,
+     "transaction_ids": [
+      "MA-2020-0496"
+     ]
+    },
+    "pricing_vs_peers": {
+     "benchmark": "Strategic peers, same filters, any margin: median 14.2x (n=30)",
+     "acquirer_median": 9.3,
+     "peer_median": 14.2,
+     "ev_ebitda_gap_turns": -4.9,
+     "position": "below"
+    },
+    "risk": {
+     "withdrawn_or_terminated": [],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 2,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 1,
+     "largest_closed_deal_mm": 436.2,
+     "largest_withdrawn_or_pending_mm": null,
+     "avg_bidders": 4.5,
+     "high_competition": true,
+     "leveraged_or_seller_financed_share_pct": 0.0
+    },
+    "score": {
+     "acquirer": "Advocate Health",
+     "acquirer_type": "Strategic",
+     "score": 0.438,
+     "relevance_mass": 0.48,
+     "fit_quality": 0.142,
+     "best_match": 0.368,
+     "exec_penalty": 0.0,
+     "n_deals": 2,
+     "n_relevant": 1,
+     "last_year": 2022,
+     "mix_fill": true
+    },
+    "descriptor": "Strategic acquirer: 2 deals in 2020-2022, 1 in the last 3 years; most deals in Healthcare Services (2); size sweet spot $135.5-336.0M (IQR); most often buys from Private (2 of 2) sellers; most common financing Stock (2 of 2).",
+    "suggested_conviction": {
+     "level": "Low",
+     "signals": [
+      "+1 2 prior Healthcare Services deal(s)",
+      "+1 no withdrawn/terminated deals"
+     ],
+     "points": 2.0
+    },
+    "closest_competitor": {
+     "acquirer": "Ardent Health Services",
+     "acquirer_type": "Strategic",
+     "distance": 0.92,
+     "this_vs_them": {
+      "closed_in_size_band": [
+       1,
+       0
+      ],
+      "deals_last_3y": [
+       1,
+       2
+      ],
+      "deal_size_median_mm": [
+       235.8,
+       94.1
+      ],
+      "size_role": [
+       "core-sized",
+       "stretch"
+      ],
+      "pricing_position": [
+       "below",
+       "n/a"
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Both Advocate Health deals are Healthcare Services stock deals, and a $200M target sits inside its $135.5-336.0M range.",
+    "acquirer_overview": "Strategic acquirer: 2 deals in 2020-2022, 1 in the last 3 years, most deals in Healthcare Services (2), size sweet spot $135.5-336.0M (IQR), buying from Private sellers in 2 of 2 deals and paying in Stock in 2 of 2. Its history points to private Healthcare Services targets, spread across Northeast and Southwest, with a median target margin of 17.9%.",
+    "strategic_fit_thesis": "The target is core-sized for Advocate Health, inside its interquartile range of $135.5-336.0M, and both of its closed deals are Healthcare Services [MA-2020-0496][MA-2022-0311]. On footprint, it has one Northeast deal and one Southwest deal, so a regional target would extend one of these or add a third geography. Versus closest competitor Ardent Health Services, the difference is size: Advocate has 1 closed deal in the size band against 0 for Ardent, and a median deal size of $235.8M against $94.1M, so the target is core-sized for Advocate but a stretch for Ardent. Vertical integration and overlap are not evidenced, and the data shows no antitrust signal. The deal labels (Strategic Acquisition, Leveraged Buyout, Diversification) are noisy, so the thesis does not rest on them. Financing is Stock in both deals, so there is no evidence of cash or debt capacity beyond that.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2020-0496",
+      "why_relevant": "Closed $436.2M Northeast Healthcare Services deal from a Private seller, paid in Stock at 9.3x EV/EBITDA; usable as a control comp and its only relevant closed deal in the size band."
+     },
+     {
+      "transaction_id": "MA-2022-0311",
+      "why_relevant": "Closed $35.3M Southwest Healthcare Services deal at 13.8x EV/EBITDA, its most recent deal (2022); far smaller than the target, so only a sector and seller-type reference."
+     }
+    ],
+    "valuation_context": "Advocate Health's only comparable closed control deal, [MA-2020-0496], priced at 9.3x EV/EBITDA and 2.04x EV/revenue. Against Strategic peers, whose median is 14.2x (n=30), it pays below its peers. The smaller [MA-2022-0311] was 13.8x, so the pricing evidence is thin at n=1 comp. A seller with a 21.5% margin may push for more than this buyer's history, where targets had a median margin of 17.9%.",
+    "risk_flags": [
+     {
+      "category": "valuation",
+      "detail": "Pricing position is below Strategic peers (9.3x against a 14.2x peer median), based on a single comp [MA-2020-0496]; a 21.5% margin seller may reject this buyer's price level."
+     },
+     {
+      "category": "competitive_process",
+      "detail": "Average bidders across its two deals is 4.5 (5 on [MA-2020-0496], 4 on [MA-2022-0311]), flagged as high competition, so it may be outbid."
+     },
+     {
+      "category": "execution",
+      "detail": "Thin and aging evidence: only 2 deals, 1 in the last 3 years, last deal in 2022, and 0 recent closed deals in the size band."
+     }
+    ],
+    "conviction": {
+     "level": "Low",
+     "rationale": "Kept at the suggested Low: only 2 deals, 1 relevant closed deal in band, none recent in band, and pricing below peers at 9.3x versus 14.2x. Offsets are a core-sized fit and no withdrawn deals."
+    }
+   },
+   "status": "repaired",
+   "issues": [],
+   "cached": true,
+   "cache_key": "e598cd545129fe5f9e4de32f93cd9157b0a5f2bd87bf37a547aeae8b3c62d5c6",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": null,
+   "top_signals": [
+    "+1 2 prior Healthcare Services deal(s)",
+    "+1 no withdrawn/terminated deals"
+   ]
+  },
+  {
+   "rank": 10,
+   "candidate": {
+    "acquirer": "Ardent Health Services",
+    "acquirer_type": "Strategic",
+    "score": 0.422,
+    "relevance_mass": 0.473,
+    "fit_quality": 0.141,
+    "best_match": 0.318,
+    "exec_penalty": 0.0,
+    "n_deals": 2,
+    "n_relevant": 2,
+    "last_year": 2022,
+    "mix_fill": true
+   },
+   "evidence": {
+    "acquirer": "Ardent Health Services",
+    "acquirer_type": "Strategic",
+    "profile": {
+     "total_deals": 2,
+     "closed_deals": 1,
+     "deals_by_sector": {
+      "Healthcare Services": 2
+     },
+     "deal_size_median_mm": 94.1,
+     "deal_size_min_mm": 68.0,
+     "largest_closed_deal_mm": 68.0,
+     "first_year": 2022,
+     "last_year": 2022,
+     "deal_types": {
+      "Bolt-on Acquisition": 1,
+      "SPAC Merger": 1
+     },
+     "distinctive_tags_lift_vs_market": {
+      "Diversification": 4.7,
+      "Platform Build": 2.1
+     },
+     "geographies": {
+      "Southwest": 1,
+      "Mountain West": 1
+     },
+     "target_ownership": {
+      "Private": 2
+     },
+     "financing": {
+      "Earnout": 1,
+      "All Cash": 1
+     },
+     "median_target_margin_pct": 13.8,
+     "median_target_growth_pct": 11.1,
+     "median_days_to_close": 49.0,
+     "relevant_closed_deals": 1,
+     "closed_in_size_band": 0,
+     "recent_in_band_closed": 0
+    },
+    "size_position": {
+     "target_size_percentile_in_buyer_history": 100,
+     "buyer_size_iqr_mm": [
+      81.0,
+      107.2
+     ],
+     "largest_closed_deal_mm": 68.0,
+     "closed_deal_p90_mm": 68.0,
+     "capacity_basis": "closed deals",
+     "size_role": "stretch",
+     "size_role_basis": "above its largest closed deal ($68.0M) or 2x its closed-deal 90th percentile"
+    },
+    "precedents": [
+     {
+      "transaction_id": "MA-2022-0245",
+      "target": "Select Medical Management",
+      "year": 2022,
+      "sector": "Healthcare Services",
+      "geography": "Southwest",
+      "deal_size_mm": 68.0,
+      "deal_type": "Bolt-on Acquisition",
+      "ev_ebitda": 14.7,
+      "ev_revenue": 1.9,
+      "ebitda_margin_pct": 15.8,
+      "revenue_growth_pct": 14.9,
+      "outcome": "Closed",
+      "target_ownership": "Private",
+      "financing": "Earnout",
+      "num_bidders": 2,
+      "tags": [
+       "Geographic Expansion",
+       "Platform Build",
+       "Diversification"
+      ],
+      "relevance": 0.32,
+      "usable_as_comp": true
+     },
+     {
+      "transaction_id": "MA-2022-0389",
+      "target": "Quality Care",
+      "year": 2022,
+      "sector": "Healthcare Services",
+      "geography": "Mountain West",
+      "deal_size_mm": 120.2,
+      "deal_type": "SPAC Merger",
+      "ev_ebitda": 17.9,
+      "ev_revenue": 2.11,
+      "ebitda_margin_pct": 11.8,
+      "revenue_growth_pct": 7.3,
+      "outcome": "Pending",
+      "target_ownership": "Private",
+      "financing": "All Cash",
+      "num_bidders": 1,
+      "tags": [
+       "Geographic Expansion",
+       "Diversification"
+      ],
+      "relevance": 0.16,
+      "usable_as_comp": false
+     }
+    ],
+    "acquirer_comps": {
+     "definition": "acquirer's closed control deals, adjacent sectors, \u00b12.5x size",
+     "n": 0
+    },
+    "pricing_vs_peers": null,
+    "risk": {
+     "withdrawn_or_terminated": [],
+     "stale_pending_or_rumored": [],
+     "deals_in_target_sector": 2,
+     "large_deals_in_target_sector_mm": [],
+     "deals_in_target_region": "target region not specified",
+     "antitrust_signal": false,
+     "deals_last_3y": 2,
+     "largest_closed_deal_mm": 68.0,
+     "largest_withdrawn_or_pending_mm": 120.2,
+     "avg_bidders": 1.5,
+     "high_competition": false,
+     "leveraged_or_seller_financed_share_pct": 0.0
+    },
+    "score": {
+     "acquirer": "Ardent Health Services",
+     "acquirer_type": "Strategic",
+     "score": 0.422,
+     "relevance_mass": 0.473,
+     "fit_quality": 0.141,
+     "best_match": 0.318,
+     "exec_penalty": 0.0,
+     "n_deals": 2,
+     "n_relevant": 2,
+     "last_year": 2022,
+     "mix_fill": true
+    },
+    "descriptor": "Strategic acquirer: 2 deals in 2022, 2 in the last 3 years; most deals in Healthcare Services (2); size sweet spot $81.0-107.2M (IQR); most often buys from Private (2 of 2) sellers; most common financing Earnout and All Cash (1 each of 2).",
+    "suggested_conviction": {
+     "level": "Low",
+     "signals": [
+      "-1 no closed deals in the size band",
+      "+1 2 prior Healthcare Services deal(s)",
+      "+1 no withdrawn/terminated deals",
+      "-1 target would be its largest deal"
+     ],
+     "points": 0.0
+    },
+    "closest_competitor": {
+     "acquirer": "Nordic Capital",
+     "acquirer_type": "Financial Sponsor",
+     "distance": 0.86,
+     "this_vs_them": {
+      "deals": [
+       2,
+       24
+      ],
+      "closed_in_size_band": [
+       0,
+       7
+      ],
+      "deals_in_target_sector": [
+       2,
+       4
+      ],
+      "deals_last_3y": [
+       2,
+       9
+      ],
+      "deal_size_median_mm": [
+       94.1,
+       77.5
+      ],
+      "size_role": [
+       "stretch",
+       "platform"
+      ],
+      "pricing_position": [
+       "n/a",
+       "in line with"
+      ]
+     }
+    }
+   },
+   "rationale": {
+    "headline": "Ardent's two Healthcare Services deals top out at $68.0M closed, so a $200.0M target is a stretch.",
+    "acquirer_overview": "Ardent Health Services is a Strategic acquirer with 2 deals, both in 2022 and both within the last 3 years. Both are in Healthcare Services, with a size sweet spot of $81.0-107.2M (IQR) and Private sellers in 2 of 2 cases. Financing splits between Earnout and All Cash, 1 each. Its history shows regional diversification: one Southwest deal [MA-2022-0245] and one Mountain West deal [MA-2022-0389], tagged Geographic Expansion and Diversification.",
+    "strategic_fit_thesis": "Ardent's sector match is real: both deals are in Healthcare Services and both buy Private sellers, like Project Atlas. Footprint is the question, since its deals sit in the Southwest and Mountain West and the target region is not specified. Size is the constraint. The size role is stretch, because the target is above its largest closed deal ($68.0M). The Bolt-on Acquisition [MA-2022-0245] closed, while the SPAC Merger [MA-2022-0389] at $120.2M is still Pending and does not prove capacity. Versus closest competitor Nordic Capital, Ardent has 0 closed deals in the size band against 7, and 2 deals overall against 24. Nordic would treat the target as a platform. Deal labels are noisy, so this rests on the size evidence rather than on tags.",
+    "precedent_activity": [
+     {
+      "transaction_id": "MA-2022-0245",
+      "why_relevant": "Closed $68.0M Healthcare Services bolt-on in the Southwest from a Private seller, paid with an Earnout at 14.7x EV/EBITDA. It is Ardent's largest closed deal and usable as a comp."
+     },
+     {
+      "transaction_id": "MA-2022-0389",
+      "why_relevant": "$120.2M Healthcare Services deal in the Mountain West, All Cash, still Pending. It is the closest Ardent has come to the target's size, but it is a SPAC Merger and not usable as a control comp."
+     }
+    ],
+    "valuation_context": "Ardent has no closed control deals in the comp definition (n=0), so there is no pricing_vs_peers position to cite and no basis to say how it pays against peers. Its one usable closed comp is [MA-2022-0245] at 14.7x EV/EBITDA and 1.9x EV/revenue on a 15.8% margin target. The Pending [MA-2022-0389] at 17.9x is a SPAC Merger and is excluded as a control comp. Ardent's median target margin is 13.8%, below the 21.5% margin of Project Atlas.",
+    "risk_flags": [
+     {
+      "category": "financing_capacity",
+      "detail": "Largest closed deal is $68.0M [MA-2022-0245] against a $200.0M target, so the target is its largest deal; the only larger deal, $120.2M [MA-2022-0389], is Pending."
+     },
+     {
+      "category": "execution",
+      "detail": "Thin evidence: 2 deals, both from 2022, with no deal in the data since, and 1 of 2 not yet closed."
+     },
+     {
+      "category": "valuation",
+      "detail": "Ardent's targets carry a median margin of 13.8% versus 21.5% for Atlas, so it has not shown it pays for margin at this level."
+     }
+    ],
+    "conviction": {
+     "level": "Low",
+     "rationale": "Held at the suggested Low: 0 closed deals in the size band, largest closed deal $68.0M versus a $200.0M target, and only 2 deals in total. Offsetting this, both deals are in Healthcare Services and none were withdrawn."
+    }
+   },
+   "status": "verified",
+   "issues": [],
+   "cached": true,
+   "cache_key": "b92877c9abb4267df14d3c468c511b2bf3b43f0b55cad3147df748718daa0f25",
+   "timing": {
+    "elapsed_s": 0.0,
+    "attempts": 0,
+    "tokens_in": 0,
+    "tokens_out": 0
+   },
+   "rank_vs_conviction": null,
+   "top_signals": [
+    "-1 no closed deals in the size band",
+    "+1 2 prior Healthcare Services deal(s)"
+   ]
+  }
+ ],
+ "warnings": [
+  "Thin coverage: only 16 Healthcare Services deals within $80.0-500.0M; search widened to adjacent sectors (126 deals in band)."
+ ],
+ "excluded": [],
+ "also_considered": [
+  {
+   "overall_rank": 9,
+   "acquirer": "Vista Equity",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.468,
+   "n_deals": 24,
+   "n_relevant": 3,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 10,
+   "acquirer": "KKR",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.466,
+   "n_deals": 17,
+   "n_relevant": 4,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 11,
+   "acquirer": "GTCR",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.456,
+   "n_deals": 14,
+   "n_relevant": 3,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 12,
+   "acquirer": "Bain Capital",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.449,
+   "n_deals": 24,
+   "n_relevant": 4,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 13,
+   "acquirer": "Francisco Partners",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.441,
+   "n_deals": 14,
+   "n_relevant": 2,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 15,
+   "acquirer": "TPG Capital",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.432,
+   "n_deals": 18,
+   "n_relevant": 3,
+   "note": "outscored a mix-floor pick; displaced to keep strategic/sponsor balance"
+  },
+  {
+   "overall_rank": 17,
+   "acquirer": "General Atlantic",
+   "acquirer_type": "Financial Sponsor",
+   "score": 0.418,
+   "n_deals": 14,
+   "n_relevant": 3,
+   "note": "below cutoff"
+  },
+  {
+   "overall_rank": 18,
+   "acquirer": "LifeStance Health",
+   "acquirer_type": "Strategic",
+   "score": 0.413,
+   "n_deals": 4,
+   "n_relevant": 1,
+   "note": "below cutoff"
+  },
+  {
+   "overall_rank": 19,
+   "acquirer": "Bon Secours Mercy Health",
+   "acquirer_type": "Strategic",
+   "score": 0.366,
+   "n_deals": 1,
+   "n_relevant": 1,
+   "note": "below cutoff"
+  },
+  {
+   "overall_rank": 20,
+   "acquirer": "CenterWell Home Health",
+   "acquirer_type": "Strategic",
+   "score": 0.353,
+   "n_deals": 6,
+   "n_relevant": 3,
+   "note": "below cutoff"
+  }
+ ],
+ "mix_floor": {
+  "min_per_type": 3,
+  "displaced": [
+   {
+    "displaced": "KKR",
+    "displaced_type": "Financial Sponsor",
+    "displaced_score": 0.466,
+    "replaced_by": "Advocate Health",
+    "replacement_score": 0.438
+   },
+   {
+    "displaced": "Vista Equity",
+    "displaced_type": "Financial Sponsor",
+    "displaced_score": 0.468,
+    "replaced_by": "Ardent Health Services",
+    "replacement_score": 0.422
+   }
+  ]
+ },
+ "data_profile": {
+  "overview": {
+   "rows": 500,
+   "rows_read": 500,
+   "duplicates_dropped": 0,
+   "coercion_failures": {},
+   "columns_mapped": 24,
+   "unmapped_columns": [],
+   "schema": [
+    {
+     "canonical": "acquirer",
+     "source": "acquirer",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "target_company",
+     "source": "target_company",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "sector",
+     "source": "sector",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "deal_size_mm",
+     "source": "deal_size_mm",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "deal_year",
+     "source": "deal_year",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "ev_ebitda_multiple",
+     "source": "ev_ebitda_multiple",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "ev_revenue_multiple",
+     "source": "ev_revenue_multiple",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "outcome",
+     "source": "outcome",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "acquirer_type",
+     "source": "acquirer_type",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "geography",
+     "source": "geography",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "ebitda_margin_pct",
+     "source": "ebitda_margin_pct",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "transaction_id",
+     "source": "transaction_id",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "deal_quarter",
+     "source": "deal_quarter",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "deal_type",
+     "source": "deal_type",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "financing_type",
+     "source": "financing_type",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "target_revenue_mm",
+     "source": "target_revenue_mm",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "target_ebitda_mm",
+     "source": "target_ebitda_mm",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "revenue_growth_pct",
+     "source": "revenue_growth_pct",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "synergy_pct_of_deal",
+     "source": "synergy_pct_of_deal",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "num_bidders",
+     "source": "num_bidders",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "days_to_close",
+     "source": "days_to_close",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "strategic_rationale_tags",
+     "source": "strategic_rationale_tags",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "target_ownership_pre",
+     "source": "target_ownership_pre",
+     "method": "exact",
+     "confidence": 1.0
+    },
+    {
+     "canonical": "sub_sector",
+     "source": "sub_sector",
+     "method": "exact",
+     "confidence": 1.0
+    }
+   ],
+   "features": {},
+   "years": [
+    2015,
+    2024
+   ],
+   "deals_per_year": {
+    "2015": 16,
+    "2016": 29,
+    "2017": 42,
+    "2018": 48,
+    "2019": 62,
+    "2020": 82,
+    "2021": 79,
+    "2022": 70,
+    "2023": 49,
+    "2024": 23
+   },
+   "unique_acquirers": 107,
+   "missing_pct_by_column": {
+    "days_to_close": 18.8,
+    "currency": 100.0
+   },
+   "numeric": {
+    "deal_size_mm": {
+     "n": 500,
+     "min": 6.1,
+     "p25": 41.1,
+     "median": 153.6,
+     "p75": 458.8,
+     "max": 14353.7,
+     "mean": 642.1
+    },
+    "ev_ebitda_multiple": {
+     "n": 500,
+     "min": 7.2,
+     "p25": 12.3,
+     "median": 15.8,
+     "p75": 19.2,
+     "max": 29.7,
+     "mean": 16.2
+    },
+    "ev_revenue_multiple": {
+     "n": 500,
+     "min": 0.3,
+     "p25": 1.9,
+     "median": 2.7,
+     "p75": 4.7,
+     "max": 8.4,
+     "mean": 3.3
+    },
+    "ebitda_margin_pct": {
+     "n": 500,
+     "min": 1.7,
+     "p25": 11.0,
+     "median": 15.5,
+     "p75": 21.5,
+     "max": 33.6,
+     "mean": 16.5
+    },
+    "revenue_growth_pct": {
+     "n": 500,
+     "min": 2.7,
+     "p25": 9.1,
+     "median": 13.2,
+     "p75": 17.2,
+     "max": 27.7,
+     "mean": 13.3
+    },
+    "synergy_pct_of_deal": {
+     "n": 500,
+     "min": 2.0,
+     "p25": 5.1,
+     "median": 7.9,
+     "p75": 10.1,
+     "max": 22.0,
+     "mean": 8.3
+    },
+    "num_bidders": {
+     "n": 500,
+     "min": 1.0,
+     "p25": 2.0,
+     "median": 2.0,
+     "p75": 3.0,
+     "max": 5.0,
+     "mean": 2.6
+    },
+    "days_to_close": {
+     "n": 406,
+     "min": 45.0,
+     "p25": 140.0,
+     "median": 239.5,
+     "p75": 322.8,
+     "max": 420.0,
+     "mean": 235.8
+    }
+   },
+   "categorical": {
+    "sector": {
+     "Behavioral Health": 70,
+     "Home Health/Hospice": 62,
+     "Physician Groups": 60,
+     "Health IT": 50,
+     "Dental": 46,
+     "Healthcare Services": 46,
+     "Revenue Cycle": 43,
+     "Health Insurance": 43,
+     "Medical Devices": 42,
+     "Pharma/Biotech": 38
+    },
+    "deal_type": {
+     "Leveraged Buyout": 66,
+     "Platform Investment": 60,
+     "Bolt-on Acquisition": 57,
+     "Recapitalization": 56,
+     "SPAC Merger": 50,
+     "Strategic Acquisition": 48,
+     "Management Buyout": 47,
+     "Minority Investment": 42,
+     "Merger of Equals": 40,
+     "Carve-out": 34
+    },
+    "outcome": {
+     "Closed": 406,
+     "Withdrawn": 49,
+     "Pending": 21,
+     "Terminated": 14,
+     "Rumored": 10
+    },
+    "acquirer_type": {
+     "Financial Sponsor": 290,
+     "Strategic": 210
+    },
+    "geography": {
+     "Midwest": 63,
+     "Southeast": 59,
+     "Mountain West": 53,
+     "Northeast": 51,
+     "Mid-Atlantic": 51,
+     "National": 51,
+     "Great Plains": 46,
+     "Multi-Regional": 44,
+     "West Coast": 42,
+     "Southwest": 40
+    },
+    "target_ownership_pre": {
+     "Private": 208,
+     "PE-Backed": 141,
+     "Public": 76,
+     "Non-Profit": 75
+    },
+    "financing_type": {
+     "Stock": 80,
+     "All Cash": 79,
+     "Seller Financing": 74,
+     "Mixed": 69,
+     "Cash + Stock": 68,
+     "Leveraged": 66,
+     "Earnout": 64
+    }
+   },
+   "outliers": {
+    "deal_size_log_iqr": 0,
+    "ev_ebitda_iqr": 0,
+    "ev_revenue_iqr": 0
+   },
+   "correlations": {
+    "ebitda_margin_pct": {
+     "revenue_growth_pct": 0.28,
+     "ev_ebitda_multiple": 0.63,
+     "ev_revenue_multiple": 0.83
+    },
+    "revenue_growth_pct": {
+     "ebitda_margin_pct": 0.28,
+     "ev_ebitda_multiple": 0.23,
+     "ev_revenue_multiple": 0.33
+    },
+    "ev_ebitda_multiple": {
+     "ebitda_margin_pct": 0.63,
+     "revenue_growth_pct": 0.23,
+     "ev_revenue_multiple": 0.73
+    },
+    "ev_revenue_multiple": {
+     "ebitda_margin_pct": 0.83,
+     "revenue_growth_pct": 0.33,
+     "ev_ebitda_multiple": 0.73
+    }
+   }
+  },
+  "target_coverage": {
+   "size_band_mm": [
+    80.0,
+    500.0
+   ],
+   "deals_in_band": 198,
+   "target_sector_total": 46,
+   "target_sector_in_band": 16,
+   "adjacent_sectors_in_band": 126,
+   "adjacent_closed_in_band": 109,
+   "in_band_by_sector": {
+    "Behavioral Health": 30,
+    "Home Health/Hospice": 27,
+    "Health IT": 26,
+    "Physician Groups": 19,
+    "Revenue Cycle": 18,
+    "Medical Devices": 16,
+    "Health Insurance": 16,
+    "Dental": 16,
+    "Healthcare Services": 16,
+    "Pharma/Biotech": 14
+   }
+  },
+  "buyer_structure": {
+   "Financial Sponsor": {
+    "acquirers": 15,
+    "deals": 290,
+    "median_deals_per_acquirer": 18.0,
+    "max_deals": 25,
+    "top": {
+     "Blackstone": 25,
+     "Bain Capital": 24,
+     "Nordic Capital": 24,
+     "Vista Equity": 24,
+     "Warburg Pincus": 23
+    }
+   },
+   "Strategic": {
+    "acquirers": 92,
+    "deals": 210,
+    "median_deals_per_acquirer": 2.0,
+    "max_deals": 6,
+    "top": {
+     "CenterWell Home Health": 6,
+     "VNS Health": 6,
+     "Amgen": 5,
+     "Lyra Health": 5,
+     "Universal Health Services": 5
+    }
+   }
+  },
+  "adjacency": {
+   "source": "preset (healthcare)",
+   "matrix": {
+    "Behavioral Health": {
+     "Behavioral Health": 1.0,
+     "Dental": 0.4,
+     "Health IT": 0.2,
+     "Health Insurance": 0.2,
+     "Healthcare Services": 0.7,
+     "Home Health/Hospice": 0.5,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.6,
+     "Revenue Cycle": 0.2
+    },
+    "Dental": {
+     "Behavioral Health": 0.4,
+     "Dental": 1.0,
+     "Health IT": 0.2,
+     "Health Insurance": 0.2,
+     "Healthcare Services": 0.6,
+     "Home Health/Hospice": 0.3,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.6,
+     "Revenue Cycle": 0.2
+    },
+    "Health IT": {
+     "Behavioral Health": 0.2,
+     "Dental": 0.2,
+     "Health IT": 1.0,
+     "Health Insurance": 0.3,
+     "Healthcare Services": 0.35,
+     "Home Health/Hospice": 0.2,
+     "Medical Devices": 0.3,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.2,
+     "Revenue Cycle": 0.8
+    },
+    "Health Insurance": {
+     "Behavioral Health": 0.2,
+     "Dental": 0.2,
+     "Health IT": 0.3,
+     "Health Insurance": 1.0,
+     "Healthcare Services": 0.4,
+     "Home Health/Hospice": 0.4,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.5,
+     "Revenue Cycle": 0.3
+    },
+    "Healthcare Services": {
+     "Behavioral Health": 0.7,
+     "Dental": 0.6,
+     "Health IT": 0.35,
+     "Health Insurance": 0.4,
+     "Healthcare Services": 1.0,
+     "Home Health/Hospice": 0.7,
+     "Medical Devices": 0.15,
+     "Pharma/Biotech": 0.1,
+     "Physician Groups": 0.8,
+     "Revenue Cycle": 0.5
+    },
+    "Home Health/Hospice": {
+     "Behavioral Health": 0.5,
+     "Dental": 0.3,
+     "Health IT": 0.2,
+     "Health Insurance": 0.4,
+     "Healthcare Services": 0.7,
+     "Home Health/Hospice": 1.0,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.5,
+     "Revenue Cycle": 0.2
+    },
+    "Medical Devices": {
+     "Behavioral Health": 0.2,
+     "Dental": 0.2,
+     "Health IT": 0.3,
+     "Health Insurance": 0.2,
+     "Healthcare Services": 0.15,
+     "Home Health/Hospice": 0.2,
+     "Medical Devices": 1.0,
+     "Pharma/Biotech": 0.5,
+     "Physician Groups": 0.2,
+     "Revenue Cycle": 0.2
+    },
+    "Pharma/Biotech": {
+     "Behavioral Health": 0.2,
+     "Dental": 0.2,
+     "Health IT": 0.2,
+     "Health Insurance": 0.2,
+     "Healthcare Services": 0.1,
+     "Home Health/Hospice": 0.2,
+     "Medical Devices": 0.5,
+     "Pharma/Biotech": 1.0,
+     "Physician Groups": 0.2,
+     "Revenue Cycle": 0.2
+    },
+    "Physician Groups": {
+     "Behavioral Health": 0.6,
+     "Dental": 0.6,
+     "Health IT": 0.2,
+     "Health Insurance": 0.5,
+     "Healthcare Services": 0.8,
+     "Home Health/Hospice": 0.5,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 1.0,
+     "Revenue Cycle": 0.5
+    },
+    "Revenue Cycle": {
+     "Behavioral Health": 0.2,
+     "Dental": 0.2,
+     "Health IT": 0.8,
+     "Health Insurance": 0.3,
+     "Healthcare Services": 0.5,
+     "Home Health/Hospice": 0.2,
+     "Medical Devices": 0.2,
+     "Pharma/Biotech": 0.2,
+     "Physician Groups": 0.5,
+     "Revenue Cycle": 1.0
+    }
+   }
+  },
+  "flags": [
+   {
+    "id": "sub_sector_redundant",
+    "observed": true,
+    "severity": "medium",
+    "finding": "sub_sector equals sector on 100% of rows",
+    "engine_response": "Similarity modelled with a sector adjacency matrix, not sub-sectors",
+    "metrics": {
+     "share": 1.0
+    }
+   },
+   {
+    "id": "ev_does_not_reconcile",
+    "observed": true,
+    "severity": "high",
+    "finding": "EV differs from EV/EBITDA x EBITDA by >10% on 403 of 500 rows",
+    "engine_response": "Stated multiples used as given and never recomputed; synthetic-data caveat in README",
+    "metrics": {
+     "rows": 403,
+     "share": 0.806
+    }
+   },
+   {
+    "id": "ebitda_too_small_for_deal_size",
+    "observed": true,
+    "severity": "high",
+    "finding": "17 deals imply EV/EBITDA more than 3x their stated multiple (deal size / target EBITDA up to 221x), e.g. MA-2022-0272 $220.7M on $1.0M EBITDA (stated 19.1x), MA-2023-0177 $109.2M on $0.7M EBITDA (stated 18x), MA-2022-0038 $1,208.2M on $10.9M EBITDA (stated 13.5x)",
+    "engine_response": "Stated multiples are used for comps; target EBITDA is never used to compute value or rank",
+    "metrics": {
+     "rows": 17,
+     "transaction_ids": [
+      "MA-2022-0272",
+      "MA-2023-0177",
+      "MA-2022-0038",
+      "MA-2022-0282",
+      "MA-2015-0488",
+      "MA-2016-0366",
+      "MA-2020-0235",
+      "MA-2021-0136",
+      "MA-2021-0344",
+      "MA-2021-0140",
+      "MA-2023-0161",
+      "MA-2018-0033",
+      "MA-2024-0020",
+      "MA-2019-0284",
+      "MA-2018-0150",
+      "MA-2019-0257",
+      "MA-2019-0063"
+     ]
+    }
+   },
+   {
+    "id": "margin_disagrees_with_financials",
+    "observed": true,
+    "severity": "medium",
+    "finding": "Stated EBITDA margin differs from EBITDA / revenue by more than 2pp on 322 of 500 rows (median gap 2.9pp, max 9.5pp), e.g. MA-2023-0177 (9.5pp), MA-2023-0481 (9.3pp), MA-2019-0105 (9.1pp)",
+    "engine_response": "The stated margin column is used for margin similarity and the anchor; revenue/EBITDA are not used",
+    "metrics": {
+     "rows": 322,
+     "median_gap_pp": 2.9,
+     "max_gap_pp": 9.5
+    }
+   },
+   {
+    "id": "thin_target_sector",
+    "observed": true,
+    "severity": "high",
+    "finding": "Only 16 Healthcare Services deals in the $80.0-500.0M band; 126 including adjacent sectors",
+    "engine_response": "Adjacent sectors weighted in via the adjacency matrix; comp ladder widens when thin",
+    "metrics": {
+     "same_sector": 16,
+     "with_adjacent": 126
+    }
+   },
+   {
+    "id": "buyer_concentration",
+    "observed": true,
+    "severity": "high",
+    "finding": "Median sponsor has 18.0 deals vs 2.0 for the median strategic",
+    "engine_response": "Empirical-Bayes shrinkage on fit and a strategic/sponsor mix floor; displaced buyers listed under 'Also considered'",
+    "metrics": {
+     "ratio": 9.0
+    }
+   },
+   {
+    "id": "size_skew",
+    "observed": true,
+    "severity": "medium",
+    "finding": "Deal size mean $642M is 4.2x the median $154M",
+    "engine_response": "Log-space size kernel; medians not means",
+    "metrics": {
+     "mean_over_median": 4.2
+    }
+   },
+   {
+    "id": "outliers",
+    "observed": false,
+    "severity": "low",
+    "finding": "0 extreme values (beyond 3x IQR) in log deal size or EV/EBITDA",
+    "engine_response": "Kept (they are real deals); the log size kernel and medians limit their influence",
+    "metrics": {
+     "rows": 0
+    }
+   },
+   {
+    "id": "stale_pending",
+    "observed": true,
+    "severity": "medium",
+    "finding": "19 Pending/Rumored deals are more than 2 years old",
+    "engine_response": "Down-weighted to Withdrawn level; excluded from comps; listed as risk facts",
+    "metrics": {
+     "rows": 19
+    }
+   },
+   {
+    "id": "non_closed_outcomes",
+    "observed": true,
+    "severity": "medium",
+    "finding": "94 deals did not close",
+    "engine_response": "Comps use Closed control deals only",
+    "metrics": {
+     "rows": 94
+    }
+   },
+   {
+    "id": "noisy_deal_type",
+    "observed": true,
+    "severity": "medium",
+    "finding": "deal_type is nearly independent of acquirer_type (Cram\u00e9r's V = 0.164); real-world LBOs/recaps are sponsor-dominated",
+    "engine_response": "Deal-type weight softened (exponent 0.5); prompt forbids theses built on one label",
+    "metrics": {
+     "cramers_v": 0.164
+    }
+   },
+   {
+    "id": "ubiquitous_tags",
+    "observed": true,
+    "severity": "low",
+    "finding": "Tags on >= 75% of deals carry no signal: {'Geographic Expansion': 0.9}",
+    "engine_response": "Tags reported by lift vs. market base rate",
+    "metrics": {
+     "tags": {
+      "Geographic Expansion": 0.9
+     }
+    }
+   },
+   {
+    "id": "synergy_backwards",
+    "observed": true,
+    "severity": "medium",
+    "finding": "Across all deals, median synergy % is higher for sponsors (8.1) than strategics (7.5), which is economically backwards",
+    "engine_response": "synergy_pct_of_deal not used for ability-to-pay",
+    "metrics": {
+     "Financial Sponsor": 8.1,
+     "Strategic": 7.5
+    }
+   },
+   {
+    "id": "multiples_differ_by_buyer",
+    "observed": true,
+    "severity": "medium",
+    "finding": "All closed control deals (every sector and size): median EV/EBITDA Financial Sponsor 15.3x, Strategic 16.1x",
+    "engine_response": "Each acquirer benchmarked against its own buyer-type peer set",
+    "metrics": {
+     "gap_turns": 0.8,
+     "Financial Sponsor": 15.3,
+     "Strategic": 16.1
+    }
+   },
+   {
+    "id": "non_control_deal_types",
+    "observed": true,
+    "severity": "medium",
+    "finding": "132 deals are ['Merger of Equals', 'Minority Investment', 'SPAC Merger'] (not control acquisitions)",
+    "engine_response": "Excluded from valuation comps; Minority Investment heavily down-weighted in ranking",
+    "metrics": {
+     "rows": 132
+    }
+   },
+   {
+    "id": "margin_drives_multiple",
+    "observed": true,
+    "severity": "medium",
+    "finding": "Correlation of EBITDA margin with EV/EBITDA is 0.63",
+    "engine_response": "Pricing compared like-for-like (any margin); the high-margin set is only the target value anchor",
+    "metrics": {
+     "correlation": 0.63
+    }
+   }
+  ],
+  "observed_flags": [
+   "sub_sector_redundant",
+   "ev_does_not_reconcile",
+   "ebitda_too_small_for_deal_size",
+   "margin_disagrees_with_financials",
+   "thin_target_sector",
+   "buyer_concentration",
+   "size_skew",
+   "stale_pending",
+   "non_closed_outcomes",
+   "noisy_deal_type",
+   "ubiquitous_tags",
+   "synergy_backwards",
+   "multiples_differ_by_buyer",
+   "non_control_deal_types",
+   "margin_drives_multiple"
+  ],
+  "load_notes": []
+ },
+ "meta": {
+  "provider": "replay",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "v1.6",
+  "data_sha256": "e47a81f726f432dc25c53aa9f5322948943774d324bc44e40df3888f326d54a0",
+  "data_rows": 500,
+  "data_notes": [],
+  "generated_at": "replay",
+  "elapsed_s": null,
+  "run_id": "69bb724e1816b2e8",
+  "cache_hits": 10,
+  "features": {},
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": null,
+  "source_run": {
+   "generated_at": "2026-11-09T13:19:35+00:00",
+   "elapsed_s": 26.3,
+   "provider": "anthropic",
+   "model": "claude-sonnet-5-5",
+   "prompt_version": "v1.6",
+   "tokens_in": 97776,
+   "tokens_out": 17645,
+   "cost_usd": 0.372,
+   "statuses": {
+    "verified": 8,
+    "repaired": 2,
+    "unverified": 0,
+    "failed": 0
+   }
+  },
+  "settings": {
+   "overrides": {},
+   "fingerprint": "d0bedf29ce3a"
+  }
+ },
+ "evaluation": {
+  "pages_with_narrative": "10/10",
+  "citation_validity": 1.0,
+  "number_validity": 1.0,
+  "mean_thesis_jaccard": 0.04,
+  "repeated_risk_flags": 0,
+  "below_peers_pages": 2,
+  "conviction_levels_used": 3,
+  "conviction_spread": {
+   "Low": 3,
+   "Medium": 3,
+   "High": 4
+  },
+  "rank_conviction_inversions": 6,
+  "words_per_page": 476.1,
+  "status": {
+   "verified": 8,
+   "repaired": 2,
+   "unverified": 0,
+   "failed": 0
+  }
+ }
+}

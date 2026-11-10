@@ -1,0 +1,49 @@
+{
+ "rationale": {
+  "headline": "Welsh Carson has 8 deals in 3 years and 6 closed in the size band, with the target landing inside its interquartile range.",
+  "acquirer_overview": "Welsh Carson is a financial sponsor with 23 deals in 2017-2023, 8 in the last 3 years. Most deals are in Behavioral Health (5) and Physician Groups (5), with a size sweet spot of $60.2-451.2M (IQR). It most often buys from Private sellers (12 of 23), and its most common financing is Mixed (5 of 23). Its history is dominated by Management Buyouts (7) and Recapitalizations (5), with Midwest the largest region (6 deals).",
+  "strategic_fit_thesis": "The size role is platform: a $200M target sits inside its interquartile range of $60.2-451.2M, at the 57th percentile of its closed-deal history, and 6 closed deals fall in the size band. Only 1 of its 23 deals is in Healthcare Services, [MA-2021-0083] at $75.3M, so this would be an adjacent-sector entry rather than a repeat. Its closest competitor is Hellman & Friedman. The difference: Welsh Carson has 8 deals in the last 3 years versus 5 for Hellman & Friedman, and 1 deal in the target sector versus 0, at similar median sizes of $172.3M and $187.3M. Deployment is steady, with its Management Buyout labelled deals including [MA-2021-0025] and [MA-2019-0287] at $203.8M and $126.9M. Deal type labels are noisy, so this rests on size and recency, not on a single tag.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2021-0083",
+    "why_relevant": "Only prior Healthcare Services deal: $75.3M Midwest Management Buyout at 17.8x EV/EBITDA from a Private seller, though its 10.3% margin is well below the target's 21.5%."
+   },
+   {
+    "transaction_id": "MA-2021-0025",
+    "why_relevant": "$203.8M Management Buyout, almost the same size as the target, at 17.6x with 5 bidders; usable as a comp."
+   },
+   {
+    "transaction_id": "MA-2019-0287",
+    "why_relevant": "$126.9M Behavioral Health buyout at 15.1x, financed with leverage; shows the sponsor's mid-size pattern."
+   },
+   {
+    "transaction_id": "MA-2022-0299",
+    "why_relevant": "$192.9M Revenue Cycle deal with a 23.7% margin, the closest on size and margin, but a Merger of Equals so not usable as a control comp."
+   }
+  ],
+  "valuation_context": "Across 4 comparable closed control deals, Welsh Carson's median is 14.9x EV/EBITDA (IQR 13.7-15.7x) and 2.15x EV/revenue [MA-2020-0094][MA-2021-0025][MA-2019-0287]. Against Financial Sponsor peers at 13.5x (n=54), it pays above its peers, by 1.4 turns. Its pricing is therefore likely to be competitive for a high-margin asset, though its own comps carry margins of 8.5-14.1%, below the target's 21.5%.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "3 withdrawn deals: [MA-2023-0166] ($398.2M, 2023), [MA-2020-0070] ($504.2M) and [MA-2022-0024] ($38.0M), plus stale [MA-2019-0376]. The most recent withdrawal was in 2023, its last active year."
+   },
+   {
+    "category": "valuation",
+    "detail": "It pays 1.4 turns above Financial Sponsor peers (14.9x vs 13.5x), which could limit headroom if the seller runs a price-led process."
+   },
+   {
+    "category": "other",
+    "detail": "Thin sector evidence: only 1 prior Healthcare Services deal [MA-2021-0083] at 10.3% margin, and no relevant closed deals counted."
+   },
+   {
+    "category": "financing_capacity",
+    "detail": "Leveraged or seller-financed deals are 30.4% of its book, and Mixed financing is the most common structure."
+   }
+  ],
+  "conviction": {
+   "level": "High",
+   "rationale": "Keeping High: 6 closed deals sit in the size band, 2 of them in the last 3 years, and the 14.9x median is within the sponsor IQR. Offsetting this, 3 withdrawn deals and only 1 sector precedent."
+  }
+ },
+ "status": "verified"
+}

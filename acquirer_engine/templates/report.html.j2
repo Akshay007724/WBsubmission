@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buyer List: {{ r.target.name }}</title>
+<style>
+:root{--ink:#16202b;--mute:#5b6875;--line:#d9dee4;--bg:#fff;--accent:#0b4f7c;--hi:#1d7a46;--med:#b07a12;--lo:#a33a2b;--soft:#f4f6f8}
+*{box-sizing:border-box}body{font:13px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:24px 16px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:0 0 6px;color:var(--accent)}h3{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);margin:14px 0 4px}
+.mute{color:var(--mute)}.small{font-size:11px}table{border-collapse:collapse;width:100%;margin:4px 0}
+th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}th{background:var(--soft);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;padding:1px 7px;border-radius:9px;font-size:11px;font-weight:600;color:#fff}
+.High{background:var(--hi)}.Medium{background:var(--med)}.Low{background:var(--lo)}
+.verified,.repaired{background:#4a6b85}.unverified,.failed{background:var(--lo)}
+.page{border-top:3px solid var(--accent);padding-top:14px;margin-top:28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.box{background:var(--soft);padding:8px 10px;border-radius:4px}.warn{background:#fff4e0;border-left:3px solid var(--med);padding:6px 10px;margin:6px 0}
+.ext{border-left:3px solid var(--mute);padding-left:8px;font-style:italic}
+.bar{height:8px;background:var(--accent);border-radius:2px;display:inline-block;vertical-align:middle}
+@media print{.page{page-break-before:always;margin-top:0}body{font-size:11px}.wrap{padding:0}a{color:inherit;text-decoration:none}}
+</style></head><body><div class="wrap">
+
+<h1>Most Likely Acquirers: {{ r.target.name }}</h1>
+<div class="mute">{{ r.target.sector }} · ~${{ r.target.ev_mm|round(0)|int }}M EV · {{ r.target.geography }} · {{ r.target.ownership }} · EBITDA margin ~{{ r.target.ebitda_margin_pct }}% · {{ r.target.notes }}</div>
+{% set sr = r.meta.get('source_run') %}{% if sr %}<div class="box small">Live run behind this report: {{ sr.get('generated_at', '') }} · {{ sr.get('model', '') }} (prompt {{ sr.get('prompt_version', '') }}) · {{ sr.get('elapsed_s', '') }} s · {{ sr.get('tokens_in', '') }} in / {{ sr.get('tokens_out', '') }} out tokens · est. ${{ "%.2f"|format(sr.get('cost_usd') or 0) }} · pages at generation: {% for k, v in sr.get('statuses', {}).items() if v %}{{ v }} {{ k }}{{ ', ' if not loop.last }}{% endfor %}{% if sr.get('recheck', '') %} · {{ sr.get('recheck', '') }}{% endif %}. Rendered here from its validated cache (replay).</div>{% endif %}
+{% if r.meta.provider == 'offline' %}<div class="warn"><b>LLM disabled:</b> narratives below are deterministic drafts from the evidence pack, not model output.</div>{% endif %}
+{% for w in r.warnings %}<div class="warn">{{ w }}</div>{% endfor %}
+
+<h3>Summary</h3>
+<p class="small mute">Rank = score (overall comparable-deal activity). Conviction = direct evidence for this deal. They can differ; where they do, the page says why.</p>
+<table><tr><th>#</th><th>Acquirer</th><th>Type</th><th class="n">Score</th><th>Conviction</th><th>Top conviction signals</th><th>Headline</th><th>Check</th></tr>
+{% for p in r.pages %}<tr><td>{{ p.rank }}</td><td><a href="#a{{ p.rank }}">{{ p.candidate.acquirer }}</a>{% if p.candidate.mix_fill %} <span class="small mute">(mix)</span>{% endif %}</td>
+<td>{{ p.candidate.acquirer_type }}</td><td class="n">{{ "%.2f"|format(p.candidate.score) }}</td>
+<td>{% if p.rationale %}<span class="badge {{ p.rationale.conviction.level }}">{{ p.rationale.conviction.level }}</span>{% endif %}</td>
+<td class="small">{% for s in p.top_signals %}{{ s }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+<td>{{ p.rationale.headline if p.rationale else '—' }}</td><td><span class="badge {{ p.status }}">{{ p.status }}</span></td></tr>{% endfor %}
+</table>
+
+<h3>Market context (applies to every buyer; pages do not repeat it)</h3>
+<div class="grid">
+<div><div class="box"><b>Target value anchor</b> (what a {{ r.target.ebitda_margin_pct }}%-margin target should command; high-margin deals only):<br>
+{% set ps = r.market.peer_set %}{{ ps.definition }} (${{ ps.size_range_mm[0] }}–{{ ps.size_range_mm[1] }}M), closed control deals.<br>
+n={{ ps.n }} · EV/EBITDA median <b>{{ ps.ev_ebitda_median|default('n/a') }}x</b> (IQR {{ ps.ev_ebitda_p25|default('n/a') }}–{{ ps.ev_ebitda_p75|default('n/a') }}x) · EV/Revenue median <b>{{ ps.ev_revenue_median|default('n/a') }}x</b><br>
+{% if r.market.implied_target_ebitda_mm %}Implied target EBITDA ~${{ r.market.implied_target_ebitda_mm }}M, revenue ~${{ r.market.implied_target_revenue_mm }}M (illustrative).<br>{% endif %}
+Last 3 years: n={{ r.market.peer_recent_3y.n }}{% if r.market.peer_recent_3y.n %}, median {{ r.market.peer_recent_3y.ev_ebitda_median|default('n/a') }}x{% endif %} ·
+{% set ss = r.market.same_sector_band %}{{ ss.definition }}: n={{ ss.n }}{% if ss.n %}, median {{ ss.ev_ebitda_median|default('n/a') }}x{% endif %}<br>
+<b>How buyers pay</b> (like-for-like, any margin; each page compares the buyer with its own type):
+{% for t, s in r.market.pricing_peers_by_buyer_type.items() %}{{ t }} median {{ s.ev_ebitda_median|default('n/a') }}x (n={{ s.n }}){{ ' · ' if not loop.last }}{% endfor %}<br>
+<span class="small mute">Excludes non-control deal types ({{ r.market.excluded_deal_types|join(', ') }}). Anchor widening: {{ r.market.widening_steps|join(' → ') }}</span></div></div>
+<div><b>Assumptions</b><ul class="small">{% for a in r.assumptions %}<li>{{ a }}</li>{% endfor %}</ul>
+</div>
+</div>
+
+{% for p in r.pages %}{% set e = p.evidence %}{% set x = p.rationale %}{% set c = p.candidate %}
+<section class="page" id="a{{ p.rank }}">
+<h2>#{{ p.rank }} {{ c.acquirer }} <span class="small mute">{{ c.acquirer_type }}</span>
+{% if x %}<span class="badge {{ x.conviction.level }}">{{ x.conviction.level }} conviction</span>{% endif %}
+<span class="badge {{ p.status }}">{{ p.status }}</span></h2>
+{% if x %}<div><b>{{ x.headline }}</b></div>{% endif %}
+{% if p.rank_vs_conviction %}<div class="box small"><b>Why rank and conviction differ:</b> {{ p.rank_vs_conviction }}</div>{% endif %}
+{% if p.issues %}<div class="warn small">Checker notes: {{ p.issues|join('; ') }}</div>{% endif %}
+{% if not x %}<div class="warn">Narrative unavailable for this acquirer. The evidence below is complete.</div>{% endif %}
+
+<div class="grid">
+<div>
+<h3>1 · Acquirer overview</h3><div class="small mute">{{ e.descriptor }}</div><div>{{ x.acquirer_overview if x else '' }}</div>
+<h3>2 · Strategic fit thesis</h3><div>{{ x.strategic_fit_thesis if x else '' }}</div>
+<h3>4 · Valuation context</h3><div>{{ x.valuation_context if x else '' }}</div>
+{% if e.acquirer_comps.n %}<div class="small mute">Acquirer comps n={{ e.acquirer_comps.n }}: {{ e.acquirer_comps.ev_ebitda_median|default('n/a') }}x EV/EBITDA, {{ e.acquirer_comps.ev_revenue_median|default('n/a') }}x EV/Rev{% if e.pricing_vs_peers %}: <b>{{ e.pricing_vs_peers.position }}</b> peers ({{ "%+.1f"|format(e.pricing_vs_peers.ev_ebitda_gap_turns) }} turns; {{ e.pricing_vs_peers.benchmark }}){% endif %}</div>{% endif %}
+</div>
+<div>
+<h3>5 · Risk flags</h3>{% if x %}<ul>{% for f in x.risk_flags %}<li><b>{{ f.category|replace('_',' ')|title }}:</b> {{ f.detail }}</li>{% endfor %}</ul>{% endif %}
+<h3>6 · Conviction</h3>{% if x %}<div><span class="badge {{ x.conviction.level }}">{{ x.conviction.level }}</span> {{ x.conviction.rationale }}</div>
+<div class="small mute">Model-suggested prior: {{ e.suggested_conviction.level }} ({{ e.suggested_conviction.signals|join('; ') or 'no signals' }})</div>{% endif %}
+<h3>Size positioning</h3><div class="small"><b>{{ e.size_position.size_role }}</b>: target EV at the {{ e.size_position.target_size_percentile_in_buyer_history }}th percentile of its deal sizes ({{ e.size_position.size_role_basis }}).</div>
+{% if e.closest_competitor %}<h3>Closest competitor on this list</h3><div class="small">{{ e.closest_competitor.acquirer }} ({{ e.closest_competitor.acquirer_type }}).
+{% for k, v in e.closest_competitor.this_vs_them.items() %}{{ k|replace('_', ' ') }}: {{ v[0] }} vs {{ v[1] }}{{ '; ' if not loop.last }}{% endfor %}</div>{% endif %}
+<h3>Why ranked #{{ p.rank }}</h3><div class="box small">
+Score {{ "%.2f"|format(c.score) }} = relevance mass {{ "%.2f"|format(c.relevance_mass) }} · shrunk fit {{ "%.3f"|format(c.fit_quality) }} · best deal {{ "%.2f"|format(c.best_match) }} · failed-deal share {{ "%.0f"|format(100*c.exec_penalty) }}%<br>
+{{ c.n_relevant }} of {{ c.n_deals }} deals relevant · last deal {{ c.last_year }}{% if c.mix_fill %} · included to meet strategic/sponsor mix floor{% endif %}<br>
+<span class="bar" style="width:{{ (c.score*200)|round(0)|int }}px"></span></div>
+
+</div></div>
+
+<h3>3 · Precedent activity</h3>
+<table><tr><th>ID</th><th>Target</th><th>Yr</th><th>Sector</th><th>Geo</th><th class="n">EV $M</th><th>Type</th><th class="n">EV/EBITDA</th><th class="n">EV/Rev</th><th class="n">Margin</th><th>Outcome</th><th class="n">Rel.</th></tr>
+{% for d in e.precedents %}<tr><td class="small">{{ d.transaction_id }}</td><td>{{ d.target }}</td><td>{{ d.year }}</td><td>{{ d.sector }}</td><td>{{ d.geography }}</td><td class="n">{{ d.deal_size_mm }}</td><td>{{ d.deal_type }}</td><td class="n">{{ d.ev_ebitda }}x</td><td class="n">{{ d.ev_revenue }}x</td><td class="n">{{ d.ebitda_margin_pct }}%</td><td>{{ d.outcome }}</td><td class="n">{{ d.relevance }}</td></tr>{% endfor %}
+</table>
+{% if x %}<ul class="small">{% for pr in x.precedent_activity %}<li><b>{{ pr.transaction_id }}</b>: {{ pr.why_relevant }}</li>{% endfor %}</ul>{% endif %}
+</section>{% endfor %}
+
+<section class="page"><h2>Also considered</h2>
+{% if r.mix_floor %}<h3>Buyer-mix floor (at least {{ r.mix_floor.min_per_type }} strategics and {{ r.mix_floor.min_per_type }} sponsors)</h3>
+{% if r.mix_floor.displaced %}<table class="small"><tr><th>Displaced (score)</th><th>Replaced by floor pick (score)</th></tr>
+{% for d in r.mix_floor.displaced %}<tr><td>{{ d.displaced }} ({{ "%.3f"|format(d.displaced_score) }})</td><td>{{ d.replaced_by }} ({{ "%.3f"|format(d.replacement_score) }})</td></tr>{% endfor %}
+</table><p class="small mute">A floor pick must have at least one closed deal in the size band or the target sector. Run with --min-per-type 0 for a pure score ranking.</p>
+{% else %}<p class="small mute">No buyer was displaced by the floor.</p>{% endif %}{% endif %}
+<table class="small"><tr><th>Overall rank</th><th>Acquirer</th><th>Type</th><th class="n">Score</th><th class="n">Deals (relevant)</th><th>Note</th></tr>
+{% for a in r.also_considered %}<tr><td>{{ a.overall_rank }}</td><td>{{ a.acquirer }}</td><td>{{ a.acquirer_type }}</td><td class="n">{{ "%.2f"|format(a.score) }}</td><td class="n">{{ a.n_deals }} ({{ a.n_relevant }})</td><td>{{ a.note }}</td></tr>{% endfor %}
+</table>
+</section>
+<section class="page"><h2>Data profile (stage 0)</h2>
+<p class="small mute">Run before scoring on every invocation. {{ r.data_profile.overview.rows }} deals · {{ r.data_profile.overview.unique_acquirers }} acquirers · {{ r.data_profile.overview.years|join('–') }}. Each finding below is paired with how the engine responds.</p>
+<table class="small"><tr><th></th><th>Finding</th><th>Engine response</th></tr>
+{% for f in r.data_profile.flags %}<tr><td>{{ '⚠' if f.observed is sameas true else ('–' if f.observed else '✓') }}</td><td>{{ f.finding }}{% if f.observed is string %} <span class="mute">({{ f.observed }})</span>{% endif %}</td><td>{{ f.engine_response }}</td></tr>{% endfor %}
+</table>
+<div class="grid">{% for name, svg in r.data_profile.get('charts', {}).items() %}<div>{{ svg|safe }}</div>{% endfor %}</div>
+{% if r.meta.features %}<p class="small mute">Features: {% for f, why in r.meta.features.items() %}{{ f }}: {{ why }}{{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
+</section>
+{% if r.evaluation %}<section class="page"><h2>Evaluation (deterministic, no LLM judge)</h2>
+<p class="small mute">Computed from this report by <code>python -m acquirer_engine.eval</code>; also written to eval.json.</p>
+<table class="small"><tr><th>Metric</th><th>Value</th></tr>
+{% for k, v in r.evaluation.items() %}<tr><td>{{ k|replace('_', ' ') }}</td><td>{{ v }}</td></tr>{% endfor %}
+</table></section>{% endif %}
+<section class="page"><h2>Methodology & run details</h2>
+<p class="small">Each historical deal is weighted by sector adjacency × log-size similarity × recency (4-year half-life) × outcome × profile fit (seller ownership, margin, geography, deal type). Acquirers are scored on total relevant activity, shrunk average fit (so a single deal can't dominate), best single match, and a failed-deal penalty. A strategic/sponsor mix floor is applied. The LLM writes only from the evidence pack; a checker confirms every number and transaction ID it cites.</p>
+{% if r.excluded %}<p class="small">Excluded by feedback: {{ r.excluded|join(', ') }}</p>{% endif %}
+<table class="small">{% for k, v in r.meta.items() %}<tr><th>{{ k }}</th><td>{{ v }}</td></tr>{% endfor %}</table>
+</section>
+</div></body></html>

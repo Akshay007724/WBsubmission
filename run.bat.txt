@@ -1,0 +1,35 @@
+@echo off
+REM One-command run for reviewers (Windows).
+REM   run.bat            reproduce the committed sample report, no API key needed (default)
+REM   run.bat offline    full pipeline with template text, no API key needed
+REM   run.bat live       real LLM run (needs ANTHROPIC_API_KEY, OPENAI_API_KEY or GEMINI_API_KEY in .env)
+setlocal
+cd /d "%~dp0"
+set MODE=%1
+if "%MODE%"=="" set MODE=replay
+
+set PY=
+where py >nul 2>nul && py -3 -c "import sys; sys.exit(sys.version_info < (3, 10))" >nul 2>nul && set PY=py -3
+if not defined PY (
+  where python >nul 2>nul && python -c "import sys; sys.exit(sys.version_info < (3, 10))" >nul 2>nul && set PY=python
+)
+if not defined PY (
+  echo This project needs Python 3.10 or newer. Install it from https://www.python.org/downloads/ and re-run run.bat
+  exit /b 1
+)
+
+if not exist .venv\Scripts\python.exe (
+  echo Creating a virtual environment and installing dependencies ^(first run only, about 1 minute^)...
+  %PY% -m venv .venv || exit /b 1
+  .venv\Scripts\python -m pip install -q --upgrade pip
+  .venv\Scripts\python -m pip install -q -r requirements.txt || exit /b 1
+)
+
+if /i "%MODE%"=="replay"  set ARGS=--provider replay
+if /i "%MODE%"=="offline" set ARGS=--provider offline
+if /i "%MODE%"=="live"    set ARGS=
+
+.venv\Scripts\python -m acquirer_engine %ARGS% || exit /b 1
+echo.
+echo Report: out\healthcare-services-200m-regional-private\report.html
+start "" "out\healthcare-services-200m-regional-private\report.html"

@@ -1,0 +1,45 @@
+{
+ "rationale": {
+  "headline": "Blackstone has 6 closed deals in the size band and pays 1.1 turns above sponsor peers, but 2 withdrawals cap conviction.",
+  "acquirer_overview": "Financial sponsor: 25 deals in 2015-2024, 6 in the last 3 years; most deals in Health Insurance (6) and Revenue Cycle (4); size sweet spot $70.7-595.7M (IQR); most often buys from Private sellers (9 of 25); most common financing is Stock (6 of 25). Its history is spread across 10 sectors, with Health Insurance and Revenue Cycle together making up 10 deals, so priorities lean toward those two rather than Healthcare Services, where it has 2 deals.",
+  "strategic_fit_thesis": "As a sponsor, Blackstone would treat a $200M target as an add-on, not a platform: size_role is add-on, measured against its 4 Platform Investment deals (median $1102.8M). That means it would come via an existing portfolio company or platform. The target sits at the 32nd percentile of its deal sizes, and 6 closed deals fall in the size band, including Evergreen Care Solutions, a Healthcare Services bolt-on at $299.0M [MA-2021-0195]. Deployment pace is 6 deals in the last 3 years. Versus closest competitor Hellman & Friedman, Blackstone has 2 Healthcare Services deals against 0 and a median deal of $341.7M against $187.3M. Hellman & Friedman would see the target as a platform. Labels such as Bolt-on Acquisition (5) and Platform Investment (4) are noisy and are only supporting data points.",
+  "precedent_activity": [
+   {
+    "transaction_id": "MA-2021-0195",
+    "why_relevant": "Healthcare Services bolt-on at $299.0M, 14.6x EV/EBITDA, all cash, closed; the nearest sector and size match. Usable as comp."
+   },
+   {
+    "transaction_id": "MA-2021-0453",
+    "why_relevant": "Dental management buyout at $222.5M, 13.5x, with a 20.1% margin close to the target's profile, and 4 bidders. Usable as comp."
+   },
+   {
+    "transaction_id": "MA-2023-0378",
+    "why_relevant": "Revenue Cycle bolt-on at $458.4M, 16.2x, 20.9% margin; the most recent in-band close for this buyer. Usable as comp."
+   },
+   {
+    "transaction_id": "MA-2021-0407",
+    "why_relevant": "Healthcare Services SPAC Merger at $341.7M, 10.0x; shows sector presence but is not usable as a control comp."
+   }
+  ],
+  "valuation_context": "Blackstone's closed control comps (5 deals, adjacent sectors, similar size) show a median of 14.6x EV/EBITDA and 2.76x EV/revenue, with an interquartile range of 13.5x-16.2x. Against its Financial Sponsor peers (median 13.5x, n=54), its pricing is above, by 1.1 turns. Expect it to bid at the upper part of the sponsor range. The SPAC deal at 10.0x [MA-2021-0407] is excluded as a control comp.",
+  "risk_flags": [
+   {
+    "category": "execution",
+    "detail": "Two withdrawn deals, [MA-2020-0040] at $54.0M and [MA-2024-0347] at $1905.7M in 2024, so the latest large attempt did not close."
+   },
+   {
+    "category": "valuation",
+    "detail": "It prices 1.1 turns above sponsor peers (14.6x vs 13.5x), so its pricing leaves less room for a margin-based bargain."
+   },
+   {
+    "category": "integration",
+    "detail": "Only 2 of 25 deals are in Healthcare Services and only 1 in-band deal closed in the last 3 years, so evidence for this exact sector and pace is thin."
+   }
+  ],
+  "conviction": {
+   "level": "Medium",
+   "rationale": "Staying at the suggested Medium: 6 closed in-band deals and a 14.6x median inside the sponsor IQR support it, but only 1 recent in-band close and 2 withdrawals prevent an upgrade."
+  }
+ },
+ "status": "verified"
+}

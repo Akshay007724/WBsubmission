@@ -1,0 +1,69 @@
+# Most Likely Acquirers: {{ r.target.name }}
+
+{{ r.target.sector }} · ~${{ r.target.ev_mm|round(0)|int }}M EV · {{ r.target.geography }} · {{ r.target.ownership }} · EBITDA margin ~{{ r.target.ebitda_margin_pct }}%
+{% if r.meta.provider == 'offline' %}
+> **LLM disabled:** narratives are deterministic drafts from the evidence pack.
+{% endif %}{% for w in r.warnings %}
+> ⚠ {{ w }}
+{% endfor %}
+
+Rank = score (overall comparable-deal activity). Conviction = direct evidence for this deal.
+
+| # | Acquirer | Type | Score | Conviction | Top conviction signals | Check |
+|---|---|---|---|---|---|---|
+{% for p in r.pages %}| {{ p.rank }} | {{ p.candidate.acquirer }} | {{ p.candidate.acquirer_type }} | {{ "%.2f"|format(p.candidate.score) }} | {{ p.rationale.conviction.level if p.rationale else '—' }} | {{ p.top_signals|join('; ') }} | {{ p.status }} |
+{% endfor %}
+
+## Market context (applies to every buyer)
+
+{% set ps = r.market.peer_set %}
+**Target value anchor** (high-margin deals): {{ ps.definition }}, closed, n={{ ps.n }}: EV/EBITDA median {{ ps.ev_ebitda_median|default('n/a') }}x (IQR {{ ps.ev_ebitda_p25|default('n/a') }}–{{ ps.ev_ebitda_p75|default('n/a') }}x); like-for-like pricing peers (any margin): {% for t, s in r.market.pricing_peers_by_buyer_type.items() %}{{ t }} {{ s.ev_ebitda_median|default('n/a') }}x (n={{ s.n }}){{ '; ' if not loop.last }}{% endfor %}, EV/Revenue median {{ ps.ev_revenue_median|default('n/a') }}x.
+
+**Assumptions:**
+{% for a in r.assumptions %}- {{ a }}
+{% endfor %}
+
+
+{% for p in r.pages %}{% set x = p.rationale %}
+
+---
+
+## {{ p.rank }}. {{ p.candidate.acquirer }} ({{ p.candidate.acquirer_type }}) {% if x %}| {{ x.conviction.level }} conviction{% endif %} | {{ p.status }}
+{% if p.rank_vs_conviction %}
+> **Why rank and conviction differ:** {{ p.rank_vs_conviction }}
+{% endif %}{% if x %}
+*{{ x.headline }}*
+
+**1. Acquirer overview.** {{ x.acquirer_overview }}
+
+*Size role: {{ p.evidence.size_position.size_role }} ({{ p.evidence.size_position.size_role_basis }}).{% if p.evidence.closest_competitor %} Closest competitor: {{ p.evidence.closest_competitor.acquirer }}.{% endif %}*
+
+**2. Strategic fit thesis.** {{ x.strategic_fit_thesis }}
+
+**3. Precedent activity.**
+{% for pr in x.precedent_activity %}- `{{ pr.transaction_id }}`: {{ pr.why_relevant }}
+{% endfor %}
+
+**4. Valuation context.** {{ x.valuation_context }}
+
+**5. Risk flags.**
+{% for f in x.risk_flags %}- *{{ f.category|replace('_',' ') }}*: {{ f.detail }}
+{% endfor %}
+
+**6. Conviction: {{ x.conviction.level }}.** {{ x.conviction.rationale }}
+{% else %}
+_Narrative unavailable; see JSON evidence._
+{% endif %}{% if p.issues %}
+_Checker notes: {{ p.issues|join('; ') }}_
+{% endif %}
+{% endfor %}
+
+---
+
+{% if r.mix_floor and r.mix_floor.displaced %}**Buyer-mix floor ({{ r.mix_floor.min_per_type }} per type):** {% for d in r.mix_floor.displaced %}{{ d.displaced }} ({{ "%.3f"|format(d.displaced_score) }}) → replaced by {{ d.replaced_by }} ({{ "%.3f"|format(d.replacement_score) }}){{ '; ' if not loop.last }}{% endfor %}. Pure score ranking: `--min-per-type 0`.
+
+{% endif %}**Also considered:** {% for a in r.also_considered %}{{ a.acquirer }} (#{{ a.overall_rank }}, {{ "%.2f"|format(a.score) }}{{ ', displaced by mix floor' if 'displaced' in a.note }}){{ '; ' if not loop.last }}{% endfor %}
+
+{% set sr = r.meta.get('source_run') %}{% if sr %}Live run behind this report: {{ sr.get('generated_at', '') }} · {{ sr.get('model', '') }} · {{ sr.get('elapsed_s', '') }} s · est. ${{ "%.2f"|format(sr.get('cost_usd') or 0) }} · pages at generation: {% for k, v in sr.get('statuses', {}).items() if v %}{{ v }} {{ k }}{{ ', ' if not loop.last }}{% endfor %}{% if sr.get('recheck', '') %} · {{ sr.get('recheck', '') }}{% endif %}. Rendered from its validated cache (replay).
+
+{% endif %}Run: {{ r.meta.provider }}/{{ r.meta.model }} · prompt {{ r.meta.prompt_version }} · data sha256 {{ r.meta.data_sha256[:12] }} · {{ r.meta.generated_at }} · {{ r.meta.elapsed_s }}s · cache hits {{ r.meta.cache_hits }}
